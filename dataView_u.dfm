@@ -21,13 +21,48 @@ object dataView: TdataView
     DataSource = dmCD.dscCD
     TabOrder = 0
   end
-  object DBGrid1: TDBGrid
-    Left = 8
-    Top = 8
-    Width = 836
-    Height = 202
+  object DBEdit1: TDBEdit
+    Left = 351
+    Top = 218
+    Width = 121
+    Height = 21
+    DataField = 'CD_name'
     DataSource = dmCD.dscCD
     TabOrder = 1
+  end
+  object btnSort: TButton
+    Left = 8
+    Top = 256
+    Width = 169
+    Height = 25
+    Caption = 'Sort By Artist and CD name'
+    TabOrder = 2
+    OnClick = btnSortClick
+  end
+  object btnFindRecord: TButton
+    Left = 8
+    Top = 287
+    Width = 97
+    Height = 25
+    Caption = 'Find One Record'
+    TabOrder = 3
+    OnClick = btnFindRecordClick
+  end
+  object edtFind: TEdit
+    Left = 111
+    Top = 289
+    Width = 121
+    Height = 21
+    TabOrder = 4
+    Text = 'Search Record'
+  end
+  object DBGrid1: TDBGrid
+    Left = 16
+    Top = 14
+    Width = 817
+    Height = 186
+    DataSource = dmCD.dscCD
+    TabOrder = 5
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
@@ -56,41 +91,46 @@ object dataView: TdataView
         FieldName = 'Genre'
         Width = 100
         Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Price'
+        Width = 100
+        Visible = True
       end>
   end
-  object DBEdit1: TDBEdit
-    Left = 351
-    Top = 218
-    Width = 121
-    Height = 21
-    DataField = 'CD_name'
-    DataSource = dmCD.dscCD
-    TabOrder = 2
-  end
-  object btnSort: TButton
+  object btnFindAverage: TButton
     Left = 8
-    Top = 256
-    Width = 75
-    Height = 25
-    Caption = 'Sort'
-    TabOrder = 3
-    OnClick = btnSortClick
-  end
-  object btnFindRecord: TButton
-    Left = 8
-    Top = 287
+    Top = 316
     Width = 97
     Height = 25
-    Caption = 'Find One Record'
-    TabOrder = 4
-    OnClick = btnFindRecordClick
+    Caption = 'Find Average'
+    TabOrder = 6
+    OnClick = btnFindAverageClick
   end
-  object edtFind: TEdit
+  object edtFindAverage: TEdit
     Left = 111
-    Top = 289
+    Top = 318
     Width = 121
     Height = 21
-    TabOrder = 5
-    Text = 'Search Record'
+    TabOrder = 7
+  end
+  object btnSortPriceAsc: TButton
+    Left = 188
+    Top = 256
+    Width = 169
+    Height = 25
+    Caption = 'Sort By Price Ascdending '
+    TabOrder = 8
+    OnClick = btnSortPriceAscClick
+  end
+  object btnSortPriceDesc: TButton
+    Left = 366
+    Top = 256
+    Width = 169
+    Height = 25
+    Caption = 'Sort By Price Descending'
+    TabOrder = 9
+    OnClick = btnSortPriceDescClick
   end
 end

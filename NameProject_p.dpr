@@ -9,7 +9,7 @@ uses
   Vcl.Styles,
   frmStringVariables_u in 'frmStringVariables_u.pas' {frmStringVariables},
   dmCD_u in 'dmCD_u.pas' {dmCD: TDataModule},
-  dataView_u in 'dataView_u.pas' {Form4};
+  dataView_u in 'dataView_u.pas' {dataView};
 
 {$R *.res}
 
@@ -21,6 +21,6 @@ begin
   Application.CreateForm(TForm3, Form3);
   Application.CreateForm(TfrmStringVariables, frmStringVariables);
   Application.CreateForm(TdmCD, dmCD);
-  Application.CreateForm(TForm4, Form4);
+  Application.CreateForm(TdataView, dataView);
   Application.Run;
 end.

@@ -122,7 +122,7 @@
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
         <DCCReference Include="dataView_u.pas">
-            <Form>Form4</Form>
+            <Form>dataView</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
