@@ -76,4 +76,21 @@ object dataView: TdataView
     TabOrder = 3
     OnClick = btnSortClick
   end
+  object btnFindRecord: TButton
+    Left = 8
+    Top = 287
+    Width = 97
+    Height = 25
+    Caption = 'Find One Record'
+    TabOrder = 4
+    OnClick = btnFindRecordClick
+  end
+  object edtFind: TEdit
+    Left = 111
+    Top = 289
+    Width = 121
+    Height = 21
+    TabOrder = 5
+    Text = 'Search Record'
+  end
 end
