@@ -29,6 +29,7 @@ type
     procedure btnSortPriceDescClick(Sender: TObject);
     procedure btnFindAverageClick(Sender: TObject);
     procedure btnInsertRecordClick(Sender: TObject);
+    procedure btnDeleteRecordClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -72,8 +73,6 @@ procedure TdataView.btnSortPriceDescClick(Sender: TObject);
 begin
   dmCD.tblCD.Sort := 'Price DESC' ;
 end;
-
-
 
 procedure TdataView.btnFindAverageClick(Sender: TObject);
 
@@ -127,6 +126,14 @@ begin
       dmCD.tblCD['OwnerID'] := iOwnerID;
       dmCD.tblCD.Post;
     end;
+end;
+
+procedure TdataView.btnDeleteRecordClick(Sender: TObject);
+
+var iD : integer;
+    sGenre : string;
+begin
+  iID := StrToInt(InputBox('ID', 'CD ID that must be deleted', '1'));
 end;
 
 

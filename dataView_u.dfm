@@ -122,6 +122,7 @@ object dataView: TdataView
     Height = 25
     Caption = 'Delete Record'
     TabOrder = 11
+    OnClick = btnDeleteRecordClick
   end
   object DBGrid1: TDBGrid
     Left = 8
