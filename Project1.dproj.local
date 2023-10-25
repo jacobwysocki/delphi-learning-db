@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/10/05 12:51:46.000.282,=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/10/05 13:03:20.000.551,C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Unit1.pas</Transaction>
+    <Transaction>2023/10/05 13:03:20.000.551,C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Unit1.dfm</Transaction>
+    <Transaction>2023/10/05 13:03:33.000.124,C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Project1.dproj</Transaction>
+    <Transaction>2023/10/05 13:25:55.000.283,=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Unit2.pas</Transaction>
+    <Transaction>2023/10/05 13:38:33.000.477,=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Unit3.pas</Transaction>
+  </Transactions>
+</BorlandProject>

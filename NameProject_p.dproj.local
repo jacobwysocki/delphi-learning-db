@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/10/05 12:51:46.000.282,=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/10/05 13:03:20.000.551,C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Unit1.pas</Transaction>
+    <Transaction>2023/10/05 13:03:20.000.551,C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Unit1.dfm</Transaction>
+    <Transaction>2023/10/05 13:03:33.000.124,C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Project1.dproj</Transaction>
+    <Transaction>2023/10/05 13:25:55.000.283,=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Unit2.pas</Transaction>
+    <Transaction>2023/10/05 13:38:33.000.477,=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Unit3.pas</Transaction>
+    <Transaction>2023/10/10 16:36:50.000.552,C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Project1.dproj=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\NameProject_p.dproj</Transaction>
+    <Transaction>2023/10/10 16:37:03.000.349,C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Unit1.dfm=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmMain.dfm</Transaction>
+    <Transaction>2023/10/10 16:37:03.000.349,C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Unit1.pas=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmMain.pas</Transaction>
+    <Transaction>2023/10/10 16:37:46.000.967,C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Unit2.pas=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmUser_u.pas</Transaction>
+    <Transaction>2023/10/10 16:37:46.000.967,C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Unit2.dfm=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmUser_u.dfm</Transaction>
+    <Transaction>2023/10/10 16:37:53.000.926,C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmMain.dfm=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmMain_u.dfm</Transaction>
+    <Transaction>2023/10/10 16:37:53.000.926,C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmMain.pas=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmMain_u.pas</Transaction>
+    <Transaction>2023/10/10 16:38:03.000.050,C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Unit3.dfm=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmName_u.dfm</Transaction>
+    <Transaction>2023/10/10 16:38:03.000.050,C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Unit3.pas=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmName_u.pas</Transaction>
+    <Transaction>2023/10/16 11:57:53.000.009,=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Unit1.pas</Transaction>
+    <Transaction>2023/10/16 11:58:38.000.216,C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmStringVariables_u.pas=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Unit1.pas</Transaction>
+    <Transaction>2023/10/16 11:59:20.000.147,=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Unit4.pas</Transaction>
+    <Transaction>2023/10/16 11:59:44.000.793,C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmStringVariables_u.dfm=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Unit4.dfm</Transaction>
+    <Transaction>2023/10/16 11:59:44.000.793,C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmStringVariables_u.pas=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Unit4.pas</Transaction>
+    <Transaction>2023/10/24 15:58:02.000.262,=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Unit2.pas</Transaction>
+    <Transaction>2023/10/24 15:59:30.000.579,C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Unit2.dfm=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\dmCD_u.dfm</Transaction>
+    <Transaction>2023/10/24 15:59:30.000.579,C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Unit2.pas=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\dmCD_u.pas</Transaction>
+    <Transaction>2023/10/24 16:41:58.000.161,=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Unit1.pas</Transaction>
+    <Transaction>2023/10/24 16:42:26.000.582,=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Unit4.pas</Transaction>
+    <Transaction>2023/10/24 16:50:18.000.839,C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Unit4.pas=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\dataView_u.pas</Transaction>
+    <Transaction>2023/10/24 16:50:18.000.839,C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Unit4.dfm=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\dataView_u.dfm</Transaction>
+  </Transactions>  <ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="dataView_u.pas"/>
+    <File Path="dataView_u.dfm"/>
+    <File Path="dmCD_u.pas"/>
+    <File Path="dmCD_u.dfm"/>
+    <File Path="frmMain_u.pas"/>
+    <File Path="frmMain_u.dfm"/>
+    <File Path="frmName_u.pas"/>
+    <File Path="frmName_u.dfm"/>
+    <File Path="frmStringVariables_u.pas"/>
+    <File Path="frmStringVariables_u.dfm"/>
+    <File Path="frmUser_u.pas"/>
+    <File Path="frmUser_u.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

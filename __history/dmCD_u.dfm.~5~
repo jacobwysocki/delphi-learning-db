@@ -1,0 +1,32 @@
+object dmCD: TdmCD
+  OldCreateOrder = False
+  Height = 544
+  Width = 613
+  object conCDDatabase: TADOConnection
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\JWysocki\O' +
+      'neDrive - Mandata Ltd\Documents\Delphi Learning\First Program\CD' +
+      '_Database.mdb;Mode=ReadWrite;Persist Security Info=False'
+    LoginPrompt = False
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 232
+    Top = 160
+  end
+  object tblCD: TADOTable
+    Connection = conCDDatabase
+    CursorType = ctStatic
+    TableName = 'CD'
+    Left = 152
+    Top = 208
+  end
+  object dscCD: TDataSource
+    DataSet = tblCD
+    Left = 24
+    Top = 24
+  end
+  object JvDBGridWordExport1: TJvDBGridWordExport
+    Caption = 'Exporting to MS Word...'
+    Left = 176
+    Top = 104
+  end
+end

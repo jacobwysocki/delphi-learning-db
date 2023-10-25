@@ -1,0 +1,28 @@
+unit Unit3;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Unit1;
+
+type
+  TForm3 = class(TForm)
+    Label1: TLabel;
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  name : String;
+  name := Edit1
+  Form3: TForm3;
+  Label1.Text := Edit1;
+implementation
+
+{$R *.dfm}
+
+end.

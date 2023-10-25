@@ -1,0 +1,36 @@
+unit frmStringVariables_u;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls;
+
+type
+  TfrmStringVariables = class(TForm)
+    btnUpperCase: TButton;
+    btnLowerCase: TButton;
+    btnCopy: TButton;
+    btnTrim: TButton;
+    btnInsert: TButton;
+    btnStringReplace: TButton;
+    btnDisplayPangram: TButton;
+    pnlLengthHeader: TPanel;
+    pnlMessageHeader: TPanel;
+    pnlLength: TPanel;
+    pnlMessage: TPanel;
+    edtPhrase: TEdit;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmStringVariables: TfrmStringVariables;
+
+implementation
+
+{$R *.dfm}
+
+end.

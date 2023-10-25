@@ -1,0 +1,70 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Unit2, Unit3;
+
+type
+  TForm1 = class(TForm)
+    Button1: TButton;
+    Edit1: TEdit;
+    CheckBox1: TCheckBox;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    CheckBox2: TCheckBox;
+    procedure Button1Click(Sender: TObject);
+    procedure CheckBox1Click(Sender: TObject);
+    procedure CheckBox2Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+
+
+var
+checkBox1Checked: Boolean;
+checkBox2Checked: Boolean;
+
+procedure TForm1.CheckBox1Click(Sender: TObject);
+
+begin
+  checkBox1Checked := CheckBox1.Checked;
+end;
+
+procedure TForm1.CheckBox2Click(Sender: TObject);
+
+begin
+    checkBox2Checked := CheckBox2.Checked;
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+
+begin
+  Form3.EditValue := Edit1.Text;
+    if (checkBox1Checked) and (not checkBox2Checked)
+    then
+      Form3.Show
+    else if (not checkBox1Checked) and (checkBox2Checked)
+    then
+      Form2.Show
+    else if (checkBox1Checked) and (checkBox2Checked)
+    then
+    begin
+      Form2.Show;
+      Form3.Show;
+    end;
+end;
+
+end.
