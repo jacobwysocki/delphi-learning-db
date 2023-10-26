@@ -4,8 +4,8 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, frmUser_u, frmName_u,
-  Vcl.ExtCtrls, Vcl.Buttons, EnPngGr, Vcl.ComCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, frmUser_u, frmName_u, frmStringVariables_u
+  ,Vcl.ExtCtrls, Vcl.Buttons, EnPngGr, Vcl.ComCtrls, dataView_u;
 
 type
   TForm1 = class(TForm)
@@ -55,11 +55,15 @@ type
     Label7: TLabel;
     pnlCustomerDetailsSubmitted: TPanel;
     pnlCompanyInfo: TPanel;
+    btnStringVariables: TButton;
+    Button1: TButton;
     procedure btnSubmitClick(Sender: TObject);
     procedure chkShareNameYesClick(Sender: TObject);
     procedure chkShareNameNoClick(Sender: TObject);
     procedure btnCloseClick(Sender: TObject);
     procedure bmbResetClick(Sender: TObject);
+    procedure btnStringVariablesClick(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -91,21 +95,42 @@ begin
 end;
 
 procedure TForm1.bmbResetClick(Sender: TObject);
+
 var
 I : integer;
+J: Integer;
+L: TLabel;
+
+
 begin
-  for I := 0 to componentcount -1 do
+  cbxAge.ItemIndex := 0;
+
+  for J := 1 to 7 do
   begin
-    if components[I] is Tedit then
-    begin
-      Tedit(components[I]).Clear;
-    end;
+    L := FindComponent('Label' + IntToStr(J)) as TLabel;
+    L.Free();
   end;
+
+
+  for I := 0 to componentcount -1 do
+    begin
+      if components[I] is Tedit then
+        begin
+          Tedit(components[I]).Clear;
+      end;
+    end;
+
 end;
+
 
 procedure TForm1.btnCloseClick(Sender: TObject);
 begin
   Application.Terminate;
+end;
+
+procedure TForm1.btnStringVariablesClick(Sender: TObject);
+begin
+  frmStringVariables.Show;
 end;
 
 procedure TForm1.btnSubmitClick(Sender: TObject);
@@ -127,11 +152,18 @@ begin
   Label1.Caption := edtFirstName.Text + ' ' + edtLastName.Text;
   Label2.Caption := cbxAge.Text;
   Label3.Caption := edtStreet.Text;
-  Label4.Caption := edtCity.Text + ' ' + edtCountry.Text;
-  Label5.Caption := edtPostalCode.Text;
+  Label4.Caption := edtCity.Text + ', ' + UpperCase(edtCountry.Text);
+  Label5.Caption := UpperCase(edtPostalCode.Text);
   Label6.Caption := edtMobile.Text;
-  Label7.Caption := edtEmail.Text;
+  Label7.Caption := LowerCase(edtEmail.Text);
 
+end;
+
+
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  dataView.Show;
 end;
 
 end.

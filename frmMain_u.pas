@@ -99,17 +99,18 @@ procedure TForm1.bmbResetClick(Sender: TObject);
 var
 I : integer;
 J: Integer;
+L: TLabel;
+
 
 begin
   cbxAge.ItemIndex := 0;
 
   for J := 1 to 7 do
     begin
-      if components[J] is TLabel then
-        begin
-          TLabel(components[J]).Free;
-        end;
+      L := FindComponent('Label' + IntToStr(J)) as TLabel;
+      L.Free();
     end;
+
 
   for I := 0 to componentcount -1 do
     begin
