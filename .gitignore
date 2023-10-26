@@ -1,7 +1,0 @@
-.gitignore
-Win32/
-__recovery/
-__history/
-*.identcache
-*.res
-*.local
