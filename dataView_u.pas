@@ -154,9 +154,26 @@ begin
 end;
 
 procedure TdataView.btnDeleteRecordGenreClick(Sender: TObject);
-begin
+var iID : integer;
+    sGenre : string;
 
+begin
+  sGenre := InputBox('Genre', 'Genre that must be deleted', 'Hip Hop');
+
+  with dmCD do
+  begin
+    tblCD.First;
+    while not tblCD.Eof do
+      begin
+        if tblCD['Genre'] = sGenre then
+          begin
+            tblCD.Delete;
+          end
+        else
+          tblCD.Next;   //delete next record without skipping
+      end;
+  end;
 end;
-  //sGenre := InputBox('Genre', 'Genre that must be deleted', 'Hip Hop');
+
 
 end.

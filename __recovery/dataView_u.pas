@@ -17,13 +17,20 @@ type
     btnFindAverage: TButton;
     btnSortPriceAsc: TButton;
     btnSortPriceDesc: TButton;
-    Panel1: TPanel;
+    pnlAveragePrice: TPanel;
     lblAveragePrice: TLabel;
     btnInsertRecord: TButton;
     btnEditRecord: TButton;
     btnDeleteRecord: TButton;
     DBGrid1: TDBGrid;
     btnDeleteRecordGenre: TButton;
+    pnlSorting: TPanel;
+    lblSorting: TLabel;
+    pnlSearch: TPanel;
+    lblSearch: TLabel;
+    lblCurrentCDName: TLabel;
+    Panel1: TPanel;
+    Label1: TLabel;
     procedure btnSortClick(Sender: TObject);
     procedure btnFindRecordClick(Sender: TObject);
     procedure btnSortPriceAscClick(Sender: TObject);
@@ -165,8 +172,12 @@ begin
     tblCD.First;
     while not tblCD.Eof do
       begin
-        if tblCD['G then
-        
+        if tblCD['Genre'] = sGenre then
+          begin
+            tblCD.Delete;
+          end
+        else
+          tblCD.Next;   //delete next record without skipping
       end;
   end;
 end;
