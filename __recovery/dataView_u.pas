@@ -154,9 +154,22 @@ begin
 end;
 
 procedure TdataView.btnDeleteRecordGenreClick(Sender: TObject);
-begin
+var iID : integer;
+    sGenre : string;
 
-end;
+begin
   sGenre := InputBox('Genre', 'Genre that must be deleted', 'Hip Hop');
+
+  with dmCD do
+  begin
+    tblCD.First;
+    while not tblCD.Eof do
+      begin
+        if tblCD['G then
+        
+      end;
+  end;
+end;
+
 
 end.

@@ -23,6 +23,7 @@ type
     btnEditRecord: TButton;
     btnDeleteRecord: TButton;
     DBGrid1: TDBGrid;
+    btnDeleteRecordGenre: TButton;
     procedure btnSortClick(Sender: TObject);
     procedure btnFindRecordClick(Sender: TObject);
     procedure btnSortPriceAscClick(Sender: TObject);
@@ -30,6 +31,7 @@ type
     procedure btnFindAverageClick(Sender: TObject);
     procedure btnInsertRecordClick(Sender: TObject);
     procedure btnDeleteRecordClick(Sender: TObject);
+    procedure btnDeleteRecordGenreClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -73,6 +75,7 @@ procedure TdataView.btnSortPriceDescClick(Sender: TObject);
 begin
   dmCD.tblCD.Sort := 'Price DESC' ;
 end;
+
 
 procedure TdataView.btnFindAverageClick(Sender: TObject);
 
@@ -130,11 +133,30 @@ end;
 
 procedure TdataView.btnDeleteRecordClick(Sender: TObject);
 
-var iD : integer;
+var iID : integer;
     sGenre : string;
 begin
   iID := StrToInt(InputBox('ID', 'CD ID that must be deleted', '1'));
+
+    with dmCD do
+    begin
+      if tblCD.Locate('ID', iID, []) = true then
+        begin
+          tblCD.Delete;
+          ShowMessage('Record Deleted!');
+        end
+      else
+        begin
+          ShowMessage('Record not found!');
+        end;
+
+    end;
 end;
 
+procedure TdataView.btnDeleteRecordGenreClick(Sender: TObject);
+begin
+
+end;
+  //sGenre := InputBox('Genre', 'Genre that must be deleted', 'Hip Hop');
 
 end.

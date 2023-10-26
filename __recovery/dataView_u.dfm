@@ -172,9 +172,9 @@ object dataView: TdataView
       end>
   end
   object btnDeleteRecordGenre: TButton
-    Left = 720
+    Left = 696
     Top = 247
-    Width = 113
+    Width = 137
     Height = 25
     Caption = 'Delete Record by Genre'
     TabOrder = 13
