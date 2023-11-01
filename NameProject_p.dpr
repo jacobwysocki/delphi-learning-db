@@ -9,18 +9,15 @@ uses
   Vcl.Styles,
   frmStringVariables_u in 'frmStringVariables_u.pas' {frmStringVariables},
   dmCD_u in 'dmCD_u.pas' {dmCD: TDataModule},
-  dataView_u in 'dataView_u.pas' {dataView};
+  dataView_u in 'dataView_u.pas' {dataView},
+  RevenueExercise in 'RevenueExercise.pas' {FormRevenue},
+  unitMain in 'unitMain.pas' {MainForm};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TForm1, Form1);
-  Application.CreateForm(TForm2, Form2);
-  Application.CreateForm(TForm3, Form3);
-  Application.CreateForm(TfrmStringVariables, frmStringVariables);
-  Application.CreateForm(TdmCD, dmCD);
-  Application.CreateForm(TdataView, dataView);
+  Application.CreateForm(TMainForm, MainForm);
   Application.Run;
 end.

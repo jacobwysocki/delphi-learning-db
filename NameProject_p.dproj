@@ -125,6 +125,14 @@
             <Form>dataView</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="RevenueExercise.pas">
+            <Form>FormRevenue</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="unitMain.pas">
+            <Form>MainForm</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
