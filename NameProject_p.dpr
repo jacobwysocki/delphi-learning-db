@@ -2,7 +2,7 @@ program NameProject_p;
 
 uses
   Vcl.Forms,
-  frmMain_u in 'frmMain_u.pas' {Form1},
+  frmMain_u in 'frmMain_u.pas' {frmPersonalDetails},
   frmUser_u in 'frmUser_u.pas' {Form2},
   frmName_u in 'frmName_u.pas' {Form3},
   Vcl.Themes,
@@ -11,7 +11,8 @@ uses
   dmCD_u in 'dmCD_u.pas' {dmCD: TDataModule},
   dataView_u in 'dataView_u.pas' {dataView},
   RevenueExercise in 'RevenueExercise.pas' {FormRevenue},
-  unitMain in 'unitMain.pas' {MainForm};
+  unitMain in 'unitMain.pas' {MainForm},
+  RevenueExercise2 in 'RevenueExercise2.pas' {FormRevenue2};
 
 {$R *.res}
 

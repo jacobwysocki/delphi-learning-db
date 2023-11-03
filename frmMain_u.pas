@@ -8,7 +8,7 @@ uses
   ,Vcl.ExtCtrls, Vcl.Buttons, EnPngGr, Vcl.ComCtrls, dataView_u;
 
 type
-  TForm1 = class(TForm)
+  TfrmPersonalDetails = class(TForm)
     btnSubmit: TButton;
     edtFirstName: TEdit;
     lblFirstName: TLabel;
@@ -71,7 +71,7 @@ type
   end;
 
 var
-  Form1: TForm1;
+  frmPersonalDetails: TfrmPersonalDetails;
 
 implementation
 
@@ -82,19 +82,19 @@ var
 chkShareNameYesChecked: Boolean;
 chkShareNameNoChecked: Boolean;
 
-procedure TForm1.chkShareNameYesClick(Sender: TObject);
+procedure TfrmPersonalDetails.chkShareNameYesClick(Sender: TObject);
 
 begin
   chkShareNameYesChecked := chkShareNameYes.Checked;
 end;
 
-procedure TForm1.chkShareNameNoClick(Sender: TObject);
+procedure TfrmPersonalDetails.chkShareNameNoClick(Sender: TObject);
 
 begin
   chkShareNameNoChecked := chkShareNameNo.Checked;
 end;
 
-procedure TForm1.bmbResetClick(Sender: TObject);
+procedure TfrmPersonalDetails.bmbResetClick(Sender: TObject);
 
 var
 I : integer;
@@ -123,17 +123,17 @@ begin
 end;
 
 
-procedure TForm1.btnCloseClick(Sender: TObject);
+procedure TfrmPersonalDetails.btnCloseClick(Sender: TObject);
 begin
   Application.Terminate;
 end;
 
-procedure TForm1.btnStringVariablesClick(Sender: TObject);
+procedure TfrmPersonalDetails.btnStringVariablesClick(Sender: TObject);
 begin
   frmStringVariables.Show;
 end;
 
-procedure TForm1.btnSubmitClick(Sender: TObject);
+procedure TfrmPersonalDetails.btnSubmitClick(Sender: TObject);
 begin
   Form3.EditValue := edtFirstName.Text +' '+ edtLastName.Text;
     if (chkShareNameYesChecked) and (not chkShareNameNoChecked)
@@ -161,7 +161,7 @@ end;
 
 
 
-procedure TForm1.Button1Click(Sender: TObject);
+procedure TfrmPersonalDetails.Button1Click(Sender: TObject);
 begin
   dataView.Show;
 end;

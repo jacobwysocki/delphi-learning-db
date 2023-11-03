@@ -101,7 +101,7 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="frmMain_u.pas">
-            <Form>Form1</Form>
+            <Form>frmPersonalDetails</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="frmUser_u.pas">
@@ -131,6 +131,10 @@
         </DCCReference>
         <DCCReference Include="unitMain.pas">
             <Form>MainForm</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="RevenueExercise2.pas">
+            <Form>FormRevenue2</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">

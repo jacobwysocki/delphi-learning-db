@@ -1,9 +1,9 @@
-object FormRevenue: TFormRevenue
+object FormRevenue2: TFormRevenue2
   Left = 0
   Top = 0
-  Caption = 'FormRevenue'
-  ClientHeight = 411
-  ClientWidth = 955
+  Caption = 'RevenueExercise2'
+  ClientHeight = 520
+  ClientWidth = 834
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -14,22 +14,43 @@ object FormRevenue: TFormRevenue
   PixelsPerInch = 96
   TextHeight = 13
   object dbgRevenueTypes: TDBGrid
-    Left = 0
+    Left = 329
     Top = 0
-    Width = 657
-    Height = 411
-    Align = alLeft
-    DataSource = dsRevenueTypes
+    Width = 505
+    Height = 520
+    Align = alRight
+    DataSource = dsRevenueTypes2
     TabOrder = 0
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'Description'
+        Width = 300
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Source'
+        Width = 70
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Active'
+        Width = 70
+        Visible = True
+      end>
   end
   object pnlRevenueTypes: TPanel
-    Left = 672
-    Top = 18
+    Left = 35
+    Top = 30
     Width = 261
     Height = 259
     TabOrder = 1
@@ -63,7 +84,7 @@ object FormRevenue: TFormRevenue
     end
     object lblRevenueType: TLabel
       Left = 35
-      Top = 65
+      Top = 68
       Width = 70
       Height = 13
       Caption = 'Revenue Type'
@@ -88,7 +109,7 @@ object FormRevenue: TFormRevenue
       Width = 121
       Height = 21
       DataField = 'Active'
-      DataSource = dsRevenueTypes
+      DataSource = dsRevenueTypes3
       TabOrder = 0
     end
     object dbEdtDefaultCurrency: TDBEdit
@@ -97,7 +118,7 @@ object FormRevenue: TFormRevenue
       Width = 121
       Height = 21
       DataField = 'DefaultCurrency'
-      DataSource = dsRevenueTypes
+      DataSource = dsRevenueTypes3
       TabOrder = 1
     end
     object dbEdtDesc: TDBEdit
@@ -106,7 +127,7 @@ object FormRevenue: TFormRevenue
       Width = 121
       Height = 21
       DataField = 'Description'
-      DataSource = dsRevenueTypes
+      DataSource = dsRevenueTypes3
       TabOrder = 2
     end
     object dbEdtRevenueCategory: TDBEdit
@@ -115,7 +136,7 @@ object FormRevenue: TFormRevenue
       Width = 121
       Height = 21
       DataField = 'RevenueCategory'
-      DataSource = dsRevenueTypes
+      DataSource = dsRevenueTypes3
       TabOrder = 3
     end
     object dbEdtRevenueCountry: TDBEdit
@@ -124,7 +145,7 @@ object FormRevenue: TFormRevenue
       Width = 121
       Height = 21
       DataField = 'RevenueCountry'
-      DataSource = dsRevenueTypes
+      DataSource = dsRevenueTypes3
       TabOrder = 4
     end
     object dbEdtRevenueType: TDBEdit
@@ -133,7 +154,7 @@ object FormRevenue: TFormRevenue
       Width = 121
       Height = 21
       DataField = 'RevenueType'
-      DataSource = dsRevenueTypes
+      DataSource = dsRevenueTypes3
       TabOrder = 5
     end
     object dbEdtSource: TDBEdit
@@ -142,87 +163,131 @@ object FormRevenue: TFormRevenue
       Width = 121
       Height = 21
       DataField = 'Source'
-      DataSource = dsRevenueTypes
+      DataSource = dsRevenueTypes3
       TabOrder = 6
     end
-    object btnClose: TButton
-      Left = 170
-      Top = 206
-      Width = 75
-      Height = 25
-      Caption = 'Close'
-      TabOrder = 7
-      OnClick = btnCloseClick
-    end
-    object btnOpen: TButton
-      Left = 14
+    object btnOpenClose: TButton
+      Left = 92
       Top = 206
       Width = 75
       Height = 25
       Caption = 'Open'
-      TabOrder = 8
-      OnClick = btnOpenClick
+      TabOrder = 7
+      OnClick = btnOpenCloseClick
     end
   end
-  object dsRevenueTypes: TDataSource
-    DataSet = qryRevenueTypes
-    Left = 692
-    Top = 332
+  object dsRevenueTypes2: TDataSource
+    DataSet = qryRevenueTypes2
+    OnStateChange = dsRevenueTypes2StateChange
+    Left = 252
+    Top = 368
   end
-  object fdMain: TFDConnection
-    ConnectionName = 'FDMAIN'
-    Params.Strings = (
-      'DataSource=Manpack_Client'
-      'User_Name=dba'
-      'DriverID=ODBC')
-    LoginPrompt = False
-    Left = 844
-    Top = 336
-  end
-  object qryRevenueTypes: TFDQuery
-    Connection = fdMain
+  object qryRevenueTypes2: TFDQuery
+    Connection = fdMain2
     SQL.Strings = (
       'SELECT *'
       '  FROM HLG01_HARevenueTypes RT')
-    Left = 772
+    Left = 252
     Top = 312
-    object qryRevenueTypesUniqueKey: TIntegerField
+    object qryRevenueTypes2UniqueKey: TIntegerField
       FieldName = 'UniqueKey'
       Origin = 'UniqueKey'
       Visible = False
     end
-    object qryRevenueTypesDescription: TStringField
+    object qryRevenueTypes2Description: TStringField
       DisplayWidth = 20
       FieldName = 'Description'
       Origin = 'Description'
       Size = 100
     end
-    object qryRevenueTypesSource: TByteField
+    object qryRevenueTypes2Source: TByteField
       FieldName = 'Source'
       Origin = 'Source'
     end
-    object qryRevenueTypesRevenueType: TIntegerField
+    object qryRevenueTypes2RevenueType: TIntegerField
       FieldName = 'RevenueType'
       Origin = 'RevenueType'
     end
-    object qryRevenueTypesRevenueCountry: TStringField
+    object qryRevenueTypes2RevenueCountry: TStringField
       DisplayWidth = 20
       FieldName = 'RevenueCountry'
       Origin = 'RevenueCountry'
       Size = 50
     end
-    object qryRevenueTypesRevenueCategory: TIntegerField
+    object qryRevenueTypes2RevenueCategory: TIntegerField
       FieldName = 'RevenueCategory'
       Origin = 'RevenueCategory'
     end
-    object qryRevenueTypesDefaultCurrency: TIntegerField
+    object qryRevenueTypes2DefaultCurrency: TIntegerField
       FieldName = 'DefaultCurrency'
       Origin = 'DefaultCurrency'
     end
-    object qryRevenueTypesActive: TStringField
+    object qryRevenueTypes2Active: TStringField
       DisplayWidth = 10
       FieldName = 'Active'
       Origin = 'Active'
     end
+  end
+  object fdMain2: TFDConnection
+    ConnectionName = 'FDMAIN2'
+    Params.Strings = (
+      'DataSource=Manpack_Client'
+      'User_Name=dba'
+      'DriverID=ODBC')
+    Connected = True
+    LoginPrompt = False
+    Left = 36
+    Top = 324
+  end
+  object qryRevenueTypes3: TFDQuery
+    Connection = fdMain2
+    SQL.Strings = (
+      'SELECT *'
+      '  FROM HLG01_HARevenueTypes RT')
+    Left = 108
+    Top = 356
+    object IntegerField1: TIntegerField
+      FieldName = 'UniqueKey'
+      Origin = 'UniqueKey'
+      Visible = False
+    end
+    object StringField1: TStringField
+      DisplayWidth = 20
+      FieldName = 'Description'
+      Origin = 'Description'
+      Size = 100
+    end
+    object ByteField1: TByteField
+      FieldName = 'Source'
+      Origin = 'Source'
+    end
+    object IntegerField2: TIntegerField
+      FieldName = 'RevenueType'
+      Origin = 'RevenueType'
+    end
+    object StringField2: TStringField
+      DisplayWidth = 20
+      FieldName = 'RevenueCountry'
+      Origin = 'RevenueCountry'
+      Size = 50
+    end
+    object IntegerField3: TIntegerField
+      FieldName = 'RevenueCategory'
+      Origin = 'RevenueCategory'
+    end
+    object IntegerField4: TIntegerField
+      FieldName = 'DefaultCurrency'
+      Origin = 'DefaultCurrency'
+    end
+    object StringField3: TStringField
+      DisplayWidth = 10
+      FieldName = 'Active'
+      Origin = 'Active'
+    end
+  end
+  object dsRevenueTypes3: TDataSource
+    DataSet = qryRevenueTypes3
+    Left = 104
+    Top = 416
   end
 end
