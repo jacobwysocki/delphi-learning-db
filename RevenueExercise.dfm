@@ -175,6 +175,7 @@ object FormRevenue: TFormRevenue
       'DataSource=Manpack_Client'
       'User_Name=dba'
       'DriverID=ODBC')
+    Connected = True
     LoginPrompt = False
     Left = 844
     Top = 336

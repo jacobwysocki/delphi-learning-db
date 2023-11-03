@@ -50,7 +50,9 @@ type
     dsRevenueTypes3: TDataSource;
     btnOpenClose: TButton ;
     procedure dsRevenueTypes2StateChange(Sender: TObject);
-    procedure btnOpenCloseClick(Sender: TObject);
+    procedure btnOpenCloseClick(Sender: TObject) ;
+    procedure dbgRevenueTypesCellClick(Column: TColumn);
+    procedure dbgRevenueTypesColEnter(Sender: TObject);
   private
     { Private declarations }
   public
@@ -71,13 +73,24 @@ begin
   begin
     fdMain2.Connected := True ;
     qryRevenueTypes2.Open ;
+    qryRevenueTypes3.Open ;
   end
   else
   begin
     fdMain2.Connected := False ;
     qryRevenueTypes2.Close ;
+    qryRevenueTypes3.Close ;
   end ;
 end;
+
+procedure TFormRevenue2.dbgRevenueTypesCellClick(Column: TColumn);
+begin
+  if not qryRevenueTypes2.IsEmpty then
+    begin
+      qryRevenueTypes3.Locate('UniqueKey', qryRevenueTypes2.FieldByName('UniqueKey').Value, []);
+    end ;
+end;
+
 
 procedure TFormRevenue2.dsRevenueTypes2StateChange(Sender: TObject);
 begin

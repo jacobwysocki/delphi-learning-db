@@ -26,6 +26,7 @@ object FormRevenue2: TFormRevenue2
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgRevenueTypesCellClick
     Columns = <
       item
         Expanded = False
