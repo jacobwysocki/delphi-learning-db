@@ -169,7 +169,7 @@ object dataView: TdataView
       Left = 128
       Top = 75
       Width = 121
-      Height = 23
+      Height = 21
       TabOrder = 2
       Text = 'Search Record'
     end
