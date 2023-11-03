@@ -107,7 +107,7 @@ object FormRevenue2: TFormRevenue2
     object dbEdtActive: TDBEdit
       Left = 124
       Top = 161
-      Width = 121
+      Width = 120
       Height = 21
       DataField = 'Active'
       DataSource = dsRevenueTypes3
@@ -116,7 +116,7 @@ object FormRevenue2: TFormRevenue2
     object dbEdtDefaultCurrency: TDBEdit
       Left = 124
       Top = 137
-      Width = 121
+      Width = 120
       Height = 21
       DataField = 'DefaultCurrency'
       DataSource = dsRevenueTypes3
@@ -125,7 +125,7 @@ object FormRevenue2: TFormRevenue2
     object dbEdtDesc: TDBEdit
       Left = 124
       Top = 17
-      Width = 121
+      Width = 120
       Height = 21
       DataField = 'Description'
       DataSource = dsRevenueTypes3
@@ -134,7 +134,7 @@ object FormRevenue2: TFormRevenue2
     object dbEdtRevenueCategory: TDBEdit
       Left = 124
       Top = 113
-      Width = 121
+      Width = 120
       Height = 21
       DataField = 'RevenueCategory'
       DataSource = dsRevenueTypes3
@@ -143,7 +143,7 @@ object FormRevenue2: TFormRevenue2
     object dbEdtRevenueCountry: TDBEdit
       Left = 124
       Top = 89
-      Width = 121
+      Width = 120
       Height = 21
       DataField = 'RevenueCountry'
       DataSource = dsRevenueTypes3
@@ -152,7 +152,7 @@ object FormRevenue2: TFormRevenue2
     object dbEdtRevenueType: TDBEdit
       Left = 124
       Top = 65
-      Width = 121
+      Width = 120
       Height = 21
       DataField = 'RevenueType'
       DataSource = dsRevenueTypes3
@@ -161,20 +161,29 @@ object FormRevenue2: TFormRevenue2
     object dbEdtSource: TDBEdit
       Left = 124
       Top = 41
-      Width = 121
+      Width = 120
       Height = 21
       DataField = 'Source'
       DataSource = dsRevenueTypes3
       TabOrder = 6
     end
     object btnOpenClose: TButton
-      Left = 92
+      Left = 30
       Top = 206
       Width = 75
       Height = 25
       Caption = 'Open'
       TabOrder = 7
       OnClick = btnOpenCloseClick
+    end
+    object btnEdit: TButton
+      Left = 146
+      Top = 206
+      Width = 75
+      Height = 25
+      Caption = 'Edit'
+      TabOrder = 8
+      OnClick = btnEditClick
     end
   end
   object dsRevenueTypes2: TDataSource
@@ -288,6 +297,7 @@ object FormRevenue2: TFormRevenue2
   end
   object dsRevenueTypes3: TDataSource
     DataSet = qryRevenueTypes3
+    OnStateChange = dsRevenueTypes3StateChange
     Left = 104
     Top = 416
   end
