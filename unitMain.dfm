@@ -49,4 +49,13 @@ object MainForm: TMainForm
     TabOrder = 3
     OnClick = btnRevenueTypes2Click
   end
+  object btnSelector: TButton
+    Left = 36
+    Top = 184
+    Width = 97
+    Height = 25
+    Caption = 'Open Selector'
+    TabOrder = 4
+    OnClick = btnSelectorClick
+  end
 end

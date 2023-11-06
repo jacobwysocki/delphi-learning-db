@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, RevenueExercise, RevenueExercise2, dataView_u, frmMain_u;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, RevenueExercise, RevenueExercise2, dataView_u, frmMain_u, SelectorMain;
 
 type
   TMainForm = class(TForm)
@@ -12,10 +12,12 @@ type
     btnPersonalDetails: TButton;
     btnMusic: TButton;
     btnRevenueTypes2: TButton;
+    btnSelector: TButton;
     procedure btnRevenueTypesClick(Sender: TObject);
     procedure btnMusicClick(Sender: TObject);
     procedure btnPersonalDetailsClick(Sender: TObject);
     procedure btnRevenueTypes2Click(Sender: TObject);
+    procedure btnSelectorClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -63,6 +65,15 @@ frmRevenue : TFormRevenue ;
 begin
   frmRevenue := TFormRevenue.Create(Self) ;
   frmRevenue.ShowModal ;
+end ;
+
+procedure TMainForm.btnSelectorClick(Sender: TObject);
+var
+frmSelector : TSelectorMainForm ;
+
+begin
+  frmSelector := TSelectorMainForm.Create(Self) ;
+  frmSelector.ShowModal ;
 end ;
 
 end.
