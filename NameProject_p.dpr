@@ -12,14 +12,17 @@ uses
   dataView_u in 'dataView_u.pas' {dataView},
   RevenueExercise in 'RevenueExercise.pas' {FormRevenue},
   unitMain in 'unitMain.pas' {MainForm},
-  RevenueExercise2 in 'RevenueExercise2.pas' {FormRevenue2};
+  RevenueExercise2 in 'RevenueExercise2.pas' {FormRevenue2},
+  SelectorMain in 'SelectorMain.pas' {SelectorMainForm},
+  SelectorMaxi in 'SelectorMaxi.pas' {MaxiSelectorForm},
+  DataShareUnit in 'DataShareUnit.pas' {TDataIntermediary};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TMainForm, MainForm);
+  Application.CreateForm(TMainForm, MainForm) ;
   Application.CreateForm(TfrmPersonalDetails, frmPersonalDetails);
   Application.CreateForm(TForm2, Form2);
   Application.CreateForm(TForm3, Form3);
@@ -28,5 +31,8 @@ begin
   Application.CreateForm(TdataView, dataView);
   Application.CreateForm(TFormRevenue, FormRevenue);
   Application.CreateForm(TFormRevenue2, FormRevenue2);
+  Application.CreateForm(TSelectorMainForm, SelectorMainForm);
+  Application.CreateForm(TMaxiSelectorForm, MaxiSelectorForm);
+  Application.CreateForm(TDataIntermediary, TDataIntermediary);
   Application.Run;
 end.

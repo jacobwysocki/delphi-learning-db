@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, SelectorMaxi;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, DataShareUnit;
 
 type
   TSelectorMainForm = class(TForm)
@@ -14,6 +14,12 @@ type
     edtCaption: TEdit;
     btnPassDetails: TButton;
     pnlDetails: TPanel;
+    lblUserInput: TLabel;
+    pnlResults: TPanel;
+    lblDateResult: TLabel;
+    lblSelectFileResult: TLabel;
+    lblCountryResult: TLabel;
+    lblResults: TLabel;
     procedure btnPassDetailsClick(Sender: TObject) ;
   private
     { Private declarations }
@@ -29,32 +35,27 @@ implementation
 
 {$R *.dfm}
 
+uses
+  SelectorMaxi ;
+
 procedure TSelectorMainForm.btnPassDetailsClick(Sender: TObject);
 var
   MaxiSelectorForm: TMaxiSelectorForm ;
-  Countries: TArray<string> ;
-  test: String ;
 begin
   MaxiSelectorForm := TMaxiSelectorForm.Create(Application);
   try
-    MaxiSelectorForm := TMaxiSelectorForm.Create(Application) ;
-    MaxiSelectorForm.CaptionValue := edtCaption.Text ;
-    test := edtCountries.Text ;
+    MaxiSelectorForm.Caption := edtCaption.Text ;
+    if ( edtCountries.Text <> '' ) then
+      MaxiSelectorForm.Area := edtCountries.Text ;
+    MaxiSelectorForm.OpenDialog1.DefaultExt := '.csv' ;
+    MaxiSelectorForm.OpenDialog1.InitialDir := 'C:\test' ;
 
-    Countries := test.Split([',']) ;
-
-
-    if Length(Countries) >= 1 then
-      MaxiSelectorForm.Country1Value := Countries[0].Trim;
-    if Length(Countries) >= 2 then
-      MaxiSelectorForm.Country2Value := Countries[1].Trim;
-    if Length(Countries) >= 3 then
-      MaxiSelectorForm.Country3Value := Countries[2].Trim;
-    if Length(Countries) >= 4 then
-      MaxiSelectorForm.Country4Value := Countries[3].Trim ;
     MaxiSelectorForm.ShowModal ;
+    lblDateResult.Caption := MaxiSelectorForm.Date ;
+    lblSelectFileResult.Caption := MaxiSelectorForm.OpenDialog1.Files.CommaText;
+    lblCountryResult.Caption := MaxiSelectorForm.Area ;
   finally
-    MaxiSelectorForm.Free;
+    MaxiSelectorForm.Free ;
   end ;
 end ;
 

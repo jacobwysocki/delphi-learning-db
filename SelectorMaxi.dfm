@@ -11,43 +11,19 @@ object MaxiSelectorForm: TMaxiSelectorForm
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
-  object pnlResults: TPanel
-    Left = 23
-    Top = 228
-    Width = 282
-    Height = 97
-    TabOrder = 0
-    object lblDateResult: TLabel
-      Left = 40
-      Top = 24
-      Width = 3
-      Height = 13
-    end
-    object lblSelectFileResult: TLabel
-      Left = 40
-      Top = 48
-      Width = 3
-      Height = 13
-    end
-    object lblCountryResult: TLabel
-      Left = 40
-      Top = 72
-      Width = 3
-      Height = 13
-    end
-  end
   object pnlMaxi: TPanel
-    Left = 23
-    Top = 19
+    Left = 35
+    Top = 52
     Width = 282
-    Height = 142
-    TabOrder = 1
+    Height = 245
+    TabOrder = 0
     object lblCountry: TLabel
       Left = 32
-      Top = 96
+      Top = 144
       Width = 39
       Height = 13
       Caption = 'Country'
@@ -61,22 +37,36 @@ object MaxiSelectorForm: TMaxiSelectorForm
     end
     object lblSelectFile: TLabel
       Left = 23
-      Top = 60
+      Top = 92
       Width = 48
       Height = 13
       Caption = 'Select File'
     end
+    object selectedFile: TLabel
+      Left = 84
+      Top = 118
+      Width = 3
+      Height = 13
+    end
+    object lblFileExtension: TLabel
+      Left = 5
+      Top = 56
+      Width = 66
+      Height = 13
+      Caption = 'File Extension'
+    end
     object btnSelectFile: TButton
       Left = 84
-      Top = 55
+      Top = 87
       Width = 186
       Height = 25
       Caption = 'Open File'
       TabOrder = 0
+      OnClick = btnSelectFileClick
     end
     object cbxCountry: TComboBox
       Left = 84
-      Top = 93
+      Top = 141
       Width = 186
       Height = 21
       TabOrder = 1
@@ -91,32 +81,36 @@ object MaxiSelectorForm: TMaxiSelectorForm
       Time = 0.416326388891320700
       TabOrder = 2
     end
+    object edtFileExtension: TEdit
+      Left = 84
+      Top = 54
+      Width = 185
+      Height = 21
+      TabOrder = 3
+      Text = 'csv'
+    end
   end
   object btnSubmit: TButton
-    Left = 112
-    Top = 167
+    Left = 35
+    Top = 348
     Width = 75
     Height = 25
     Caption = 'Submit'
-    TabOrder = 2
+    TabOrder = 1
     OnClick = btnSubmitClick
   end
   object btnCloseApp: TButton
-    Left = 230
-    Top = 344
+    Left = 242
+    Top = 348
     Width = 75
     Height = 25
     Caption = 'Close App'
-    TabOrder = 3
+    TabOrder = 2
     OnClick = btnCloseAppClick
   end
-  object btnReset: TButton
-    Left = 23
-    Top = 344
-    Width = 75
-    Height = 25
-    Caption = 'Reset Fields'
-    TabOrder = 4
-    OnClick = btnResetClick
+  object OpenDialog1: TOpenDialog
+    Options = [ofReadOnly, ofOverwritePrompt, ofHideReadOnly, ofAllowMultiSelect, ofPathMustExist, ofFileMustExist, ofEnableSizing]
+    Left = 311
+    Top = 119
   end
 end
