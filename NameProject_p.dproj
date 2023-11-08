@@ -145,10 +145,6 @@
             <Form>MaxiSelectorForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="DataShareUnit.pas">
-            <Form>TDataIntermediary</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

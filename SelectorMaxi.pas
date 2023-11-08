@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtDlgs, Vcl.ComCtrls, Vcl.ExtCtrls, DataShareUnit;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtDlgs, Vcl.ComCtrls, Vcl.ExtCtrls;
 
 type
   TMaxiSelectorForm = class(TForm)
@@ -39,8 +39,7 @@ type
   end ;
 
 var
-  MaxiSelectorForm: TMaxiSelectorForm;
-  DataIntermediary: TDataIntermediary ;
+  MaxiSelectorForm: TMaxiSelectorForm ;
 
 implementation
 
