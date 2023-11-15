@@ -13,11 +13,13 @@ type
     btnMusic: TButton;
     btnRevenueTypes2: TButton;
     btnSelector: TButton;
+    btnClose: TButton;
     procedure btnRevenueTypesClick(Sender: TObject);
     procedure btnMusicClick(Sender: TObject);
     procedure btnPersonalDetailsClick(Sender: TObject);
     procedure btnRevenueTypes2Click(Sender: TObject);
     procedure btnSelectorClick(Sender: TObject);
+    procedure btnCloseClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -74,6 +76,11 @@ frmSelector : TSelectorMainForm ;
 begin
   frmSelector := TSelectorMainForm.Create(Self) ;
   frmSelector.ShowModal ;
+end ;
+
+procedure TMainForm.btnCloseClick(Sender: TObject);
+begin
+  Application.Terminate ;
 end ;
 
 end.

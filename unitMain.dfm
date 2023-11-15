@@ -16,46 +16,55 @@ object MainForm: TMainForm
   object btnRevenueTypes: TButton
     Left = 36
     Top = 32
-    Width = 97
+    Width = 105
     Height = 25
     Caption = 'Open Revenue DB'
     TabOrder = 0
     OnClick = btnRevenueTypesClick
   end
   object btnPersonalDetails: TButton
-    Left = 36
-    Top = 68
-    Width = 97
-    Height = 25
-    Caption = 'Personal Details'
-    TabOrder = 1
-    OnClick = btnPersonalDetailsClick
-  end
-  object btnMusic: TButton
-    Left = 36
-    Top = 104
-    Width = 97
-    Height = 25
-    Caption = 'Open Music DB'
-    TabOrder = 2
-    OnClick = btnMusicClick
-  end
-  object btnRevenueTypes2: TButton
-    Left = 152
+    Left = 168
     Top = 32
     Width = 105
     Height = 25
-    Caption = 'Open Revenue2 DB'
+    Caption = 'Personal Details'
     TabOrder = 3
+    OnClick = btnPersonalDetailsClick
+  end
+  object btnMusic: TButton
+    Left = 168
+    Top = 63
+    Width = 105
+    Height = 25
+    Caption = 'Open Music DB'
+    TabOrder = 4
+    OnClick = btnMusicClick
+  end
+  object btnRevenueTypes2: TButton
+    Left = 36
+    Top = 63
+    Width = 105
+    Height = 25
+    Caption = 'Open Revenue2 DB'
+    TabOrder = 1
     OnClick = btnRevenueTypes2Click
   end
   object btnSelector: TButton
     Left = 36
-    Top = 184
-    Width = 97
+    Top = 124
+    Width = 105
     Height = 25
     Caption = 'Open Selector'
-    TabOrder = 4
+    TabOrder = 2
     OnClick = btnSelectorClick
+  end
+  object btnClose: TButton
+    Left = 36
+    Top = 260
+    Width = 69
+    Height = 25
+    Caption = 'Close'
+    TabOrder = 5
+    OnClick = btnCloseClick
   end
 end
