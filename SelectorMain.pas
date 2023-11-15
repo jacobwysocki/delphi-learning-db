@@ -45,7 +45,11 @@ var
 begin
   MaxiSelectorForm := TMaxiSelectorForm.Create(Application);
   try
-    MaxiSelectorForm.Caption := edtCaption.Text ;
+    if Length(edtCaption.Text) = 0 then
+       MaxiSelectorForm.Caption := 'Default Caption'
+    else
+        MaxiSelectorForm.Caption := edtCaption.Text ;
+
     if ( edtCountries.Text <> '' ) then
       MaxiSelectorForm.Area := edtCountries.Text ;
     MaxiSelectorForm.OpenDialog1.DefaultExt := '.csv' ;

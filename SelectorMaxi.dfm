@@ -88,6 +88,8 @@ object MaxiSelectorForm: TMaxiSelectorForm
       Height = 72
       Hint = 'Import Selected Areas Only'
       ItemHeight = 13
+      ParentShowHint = False
+      ShowHint = True
       TabOrder = 3
     end
     object cbLoadBuild: TCheckBox
