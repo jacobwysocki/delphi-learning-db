@@ -9,7 +9,7 @@ uses
 type
   TSelectorMainForm = class(TForm)
     lblCaption: TLabel;
-    lblCountriesEntry: TLabel;
+    lblAreasEntry: TLabel;
     edtCountries: TEdit;
     edtCaption: TEdit;
     btnPassDetails: TButton;
@@ -20,6 +20,7 @@ type
     lblSelectFileResult: TLabel;
     lblCountryResult: TLabel;
     lblResults: TLabel;
+    lblLoadBuild: TLabel;
     procedure btnPassDetailsClick(Sender: TObject) ;
   private
     { Private declarations }
@@ -54,6 +55,12 @@ begin
     lblDateResult.Caption := MaxiSelectorForm.Date ;
     lblSelectFileResult.Caption := MaxiSelectorForm.OpenDialog1.Files.CommaText;
     lblCountryResult.Caption := MaxiSelectorForm.Area ;
+
+    if MaxiSelectorForm.LoadBuild = True then
+       lblLoadBuild.Caption := 'Load Build Checked'
+    else
+        lblLoadBuild.Caption := 'Load Build Not Checked' ;
+
   finally
     MaxiSelectorForm.Free ;
   end ;

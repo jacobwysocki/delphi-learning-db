@@ -19,15 +19,8 @@ object MaxiSelectorForm: TMaxiSelectorForm
     Left = 35
     Top = 52
     Width = 282
-    Height = 245
+    Height = 265
     TabOrder = 0
-    object lblCountry: TLabel
-      Left = 32
-      Top = 144
-      Width = 39
-      Height = 13
-      Caption = 'Country'
-    end
     object lblDate: TLabel
       Left = 48
       Top = 27
@@ -55,39 +48,57 @@ object MaxiSelectorForm: TMaxiSelectorForm
       Height = 13
       Caption = 'File Extension'
     end
+    object lblArea: TLabel
+      Left = 48
+      Top = 137
+      Width = 23
+      Height = 13
+      Caption = 'Area'
+    end
     object btnSelectFile: TButton
       Left = 84
       Top = 87
       Width = 186
       Height = 25
       Caption = 'Open File'
-      TabOrder = 0
+      TabOrder = 2
       OnClick = btnSelectFileClick
-    end
-    object cbxCountry: TComboBox
-      Left = 84
-      Top = 141
-      Width = 186
-      Height = 21
-      TabOrder = 1
-      Text = 'Select Country'
     end
     object dtpDate: TDateTimePicker
       Left = 84
       Top = 23
       Width = 186
       Height = 21
-      Date = 45236.000000000000000000
-      Time = 0.416326388891320700
-      TabOrder = 2
+      Date = 45245.000000000000000000
+      Time = 0.957986111112404600
+      TabOrder = 0
     end
     object edtFileExtension: TEdit
       Left = 84
       Top = 54
       Width = 185
       Height = 21
-      TabOrder = 3
+      TabOrder = 1
       Text = 'csv'
+    end
+    object chkbxArea: TCheckListBox
+      Left = 84
+      Top = 137
+      Width = 185
+      Height = 72
+      Hint = 'Import Selected Areas Only'
+      ItemHeight = 13
+      TabOrder = 3
+    end
+    object cbLoadBuild: TCheckBox
+      Left = 84
+      Top = 220
+      Width = 97
+      Height = 17
+      Caption = 'Load Build'
+      Checked = True
+      State = cbChecked
+      TabOrder = 4
     end
   end
   object btnSubmit: TButton

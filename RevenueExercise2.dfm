@@ -168,7 +168,7 @@ object FormRevenue2: TFormRevenue2
       TabOrder = 6
     end
     object btnOpenClose: TButton
-      Left = 30
+      Left = 7
       Top = 206
       Width = 75
       Height = 25
@@ -177,13 +177,22 @@ object FormRevenue2: TFormRevenue2
       OnClick = btnOpenCloseClick
     end
     object btnEdit: TButton
-      Left = 146
+      Left = 92
       Top = 206
       Width = 75
       Height = 25
       Caption = 'Edit'
       TabOrder = 8
       OnClick = btnEditClick
+    end
+    object btnName: TButton
+      Left = 175
+      Top = 206
+      Width = 75
+      Height = 25
+      Caption = 'Add'
+      TabOrder = 9
+      OnClick = btnNameClick
     end
   end
   object dsRevenueTypes2: TDataSource

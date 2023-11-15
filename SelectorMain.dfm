@@ -35,12 +35,12 @@ object SelectorMainForm: TSelectorMainForm
       Height = 13
       Caption = 'Caption:'
     end
-    object lblCountriesEntry: TLabel
+    object lblAreasEntry: TLabel
       Left = 48
       Top = 91
-      Width = 150
+      Width = 132
       Height = 13
-      Caption = 'Countries Separated by comma'
+      Caption = 'Areas Separated by comma'
     end
     object lblUserInput: TLabel
       Left = 96
@@ -66,9 +66,9 @@ object SelectorMainForm: TSelectorMainForm
   end
   object pnlResults: TPanel
     Left = 20
-    Top = 220
+    Top = 196
     Width = 277
-    Height = 129
+    Height = 157
     TabOrder = 2
     object lblDateResult: TLabel
       Left = 13
@@ -97,6 +97,13 @@ object SelectorMainForm: TSelectorMainForm
       Width = 35
       Height = 13
       Caption = 'Results'
+    end
+    object lblLoadBuild: TLabel
+      Left = 13
+      Top = 123
+      Width = 45
+      Height = 13
+      Caption = 'LoadBuild'
     end
   end
 end

@@ -4,12 +4,10 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtDlgs, Vcl.ComCtrls, Vcl.ExtCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtDlgs, Vcl.ComCtrls, Vcl.ExtCtrls, Vcl.CheckLst;
 
 type
   TMaxiSelectorForm = class(TForm)
-    cbxCountry: TComboBox;
-    lblCountry: TLabel;
     dtpDate: TDateTimePicker;
     lblDate: TLabel;
     lblSelectFile: TLabel;
@@ -21,21 +19,26 @@ type
     selectedFile: TLabel;
     lblFileExtension: TLabel;
     edtFileExtension: TEdit;
+    lblArea: TLabel;
+    chkbxArea: TCheckListBox;
+    cbLoadBuild: TCheckBox;
     procedure FormShow(Sender: TObject) ;
     procedure btnSubmitClick(Sender: TObject);
     procedure btnCloseAppClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure btnSelectFileClick(Sender: TObject);
   private
-    FsArea: String;
-    FsDate: String;
-    FsFiles: String;
-    procedure SetArea(const Value: String);
+    FsArea: String ;
+    FsDate: String ;
+    FsFiles: String ;
+    FbLoadBuild: Boolean ;
+    procedure SetArea(const Value: String) ;
   public
 
     property Date: String read FsDate ;
     property Files: String read FsFiles ;
     property Area: String read FsArea write SetArea ;
+    property LoadBuild: Boolean read FbLoadBuild ;
   end ;
 
 var
@@ -50,13 +53,15 @@ begin
   FsArea := 'England,Scotland,Northern Ireland,ROI' ;
   FsDate := '' ;
   FsFiles := '' ;
+  FbLoadBuild := False ;
 end;
 
 procedure TMaxiSelectorForm.FormShow(Sender: TObject);
 begin
 //ShowMessage('FormCreate is triggered') ;
-  cbxCountry.Items.StrictDelimiter := True ;
-  cbxCountry.Items.CommaText := 'All,' + FsArea ;
+
+  chkbxArea.Items.StrictDelimiter := True ;
+  chkbxArea.Items.CommaText := FsArea ;
 end;
 
 procedure TMaxiSelectorForm.SetArea(const Value: String);
@@ -107,20 +112,41 @@ end;
 
 
 procedure TMaxiSelectorForm.btnSubmitClick(Sender: TObject);
+var
+  CheckedItems: TStringList;
 begin
   if IsDateInPast(dtpDate.DateTime) then
     ShowMessage('The date is in the past.')
   else
-
-  //move the results to Selector Main Form
   begin
-    FsDate := DateTimeToStr(dtpDate.Date) ;
-    FsFiles := Opendialog1.Files.CommaText ;
-    FsArea := cbxCountry.Text ;
-    //DataIntermediary.SetResultData(sDate) ;
-    ModalResult := mrOK ;
-  end ;
-end ;
+    FsDate := DateTimeToStr(dtpDate.Date);
+    FsFiles := OpenDialog1.Files.CommaText ;
+    FbLoadBuild := cbLoadBuild.Checked ;
+
+    CheckedItems := TStringList.Create;
+    try
+      // Collect checked items from chkbxCountry
+      for var i := 0 to chkbxArea.Items.Count - 1 do
+      begin
+        if chkbxArea.Checked[i] then
+          CheckedItems.Add(chkbxArea.Items[i]);
+      end;
+
+      // Set FsArea based on checked items
+      if CheckedItems.Count > 0 then
+        FsArea := CheckedItems.CommaText
+      else
+        FsArea := chkbxArea.Items.CommaText; // All items selected
+    finally
+      CheckedItems.Free;
+    end;
+
+    ModalResult := mrOK;
+  end;
+end;
+
+
+
 
 
 procedure TMaxiSelectorForm.btnCloseAppClick(Sender: TObject);
