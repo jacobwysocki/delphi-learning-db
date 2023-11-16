@@ -11,7 +11,7 @@ object frmStringVariables: TfrmStringVariables
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
-  Position = poScreenCenter
+  Position = poOwnerFormCenter
   PixelsPerInch = 96
   TextHeight = 13
   object btnUpperCase: TButton

@@ -11,6 +11,7 @@ object FormRevenue: TFormRevenue
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poOwnerFormCenter
   PixelsPerInch = 96
   TextHeight = 13
   object dbgRevenueTypes: TDBGrid
