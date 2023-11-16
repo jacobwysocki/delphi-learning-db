@@ -14,7 +14,7 @@ object SelectorMainForm: TSelectorMainForm
   PixelsPerInch = 96
   TextHeight = 13
   object btnPassDetails: TButton
-    Left = 124
+    Left = 20
     Top = 366
     Width = 75
     Height = 25
@@ -105,5 +105,14 @@ object SelectorMainForm: TSelectorMainForm
       Height = 13
       Caption = 'LoadBuild'
     end
+  end
+  object btnPassToFileExtChecker: TButton
+    Left = 106
+    Top = 366
+    Width = 191
+    Height = 25
+    Caption = 'Access the file extension checker'
+    TabOrder = 3
+    OnClick = btnPassToFileExtCheckerClick
   end
 end

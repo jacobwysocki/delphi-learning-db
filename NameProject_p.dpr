@@ -14,6 +14,7 @@ uses
   unitMain in 'unitMain.pas' {MainForm},
   RevenueExercise2 in 'RevenueExercise2.pas' {FormRevenue2},
   SelectorMain in 'SelectorMain.pas' {SelectorMainForm},
+  unitfrmMaxiSelector in 'unitfrmMaxiSelector.pas' {formMaxiSelector},
   SelectorMaxi in 'SelectorMaxi.pas' {MaxiSelectorForm};
 
 {$R *.res}

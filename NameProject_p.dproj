@@ -141,6 +141,10 @@
             <Form>SelectorMainForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="unitfrmMaxiSelector.pas">
+            <Form>formMaxiSelector</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <DCCReference Include="SelectorMaxi.pas">
             <Form>MaxiSelectorForm</Form>
             <FormType>dfm</FormType>
