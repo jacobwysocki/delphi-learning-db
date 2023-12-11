@@ -68,4 +68,22 @@ object MainForm: TMainForm
     TabOrder = 5
     OnClick = btnCloseClick
   end
+  object btnFunctions: TButton
+    Left = 300
+    Top = 32
+    Width = 105
+    Height = 25
+    Caption = 'Functions'
+    TabOrder = 6
+    OnClick = btnFunctionsClick
+  end
+  object btnProcedures: TButton
+    Left = 300
+    Top = 63
+    Width = 105
+    Height = 25
+    Caption = 'Procedures'
+    TabOrder = 7
+    OnClick = btnProceduresClick
+  end
 end

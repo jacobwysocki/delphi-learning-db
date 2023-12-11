@@ -4,7 +4,8 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, RevenueExercise, RevenueExercise2, dataView_u, frmMain_u, SelectorMain;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, RevenueExercise, RevenueExercise2,
+  dataView_u, frmMain_u, SelectorMain, MathFunctions, Procedures;
 
 type
   TMainForm = class(TForm)
@@ -14,12 +15,16 @@ type
     btnRevenueTypes2: TButton;
     btnSelector: TButton;
     btnClose: TButton;
+    btnFunctions: TButton;
+    btnProcedures: TButton;
     procedure btnRevenueTypesClick(Sender: TObject);
     procedure btnMusicClick(Sender: TObject);
     procedure btnPersonalDetailsClick(Sender: TObject);
     procedure btnRevenueTypes2Click(Sender: TObject);
     procedure btnSelectorClick(Sender: TObject);
     procedure btnCloseClick(Sender: TObject);
+    procedure btnFunctionsClick(Sender: TObject);
+    procedure btnProceduresClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -40,6 +45,24 @@ frmPersonalDetails : TfrmPersonalDetails ;
 begin
   frmPersonalDetails := TfrmPersonalDetails.Create(Self) ;
   frmPersonalDetails.ShowModal ;
+end;
+
+procedure TMainForm.btnProceduresClick(Sender: TObject);
+var
+frmProcedures: TfrmProcedures ;
+
+begin
+  frmProcedures := TfrmProcedures.Create(Self) ;
+  frmProcedures.ShowModal ;
+end ;
+
+procedure TMainForm.btnFunctionsClick(Sender: TObject);
+var
+frmFunctions: TfrmFunctions ;
+
+begin
+  frmFunctions := TfrmFunctions.Create(Self) ;
+  frmFunctions.ShowModal ;
 end;
 
 procedure TMainForm.btnMusicClick(Sender: TObject);

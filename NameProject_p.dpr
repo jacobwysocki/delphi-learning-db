@@ -15,7 +15,9 @@ uses
   RevenueExercise2 in 'RevenueExercise2.pas' {FormRevenue2},
   SelectorMain in 'SelectorMain.pas' {SelectorMainForm},
   unitfrmMaxiSelector in 'unitfrmMaxiSelector.pas' {formMaxiSelector},
-  SelectorMaxi in 'SelectorMaxi.pas' {MaxiSelectorForm};
+  SelectorMaxi in 'SelectorMaxi.pas' {MaxiSelectorForm},
+  MathFunctions in 'MathFunctions.pas' {frmFunctions},
+  Procedures in 'Procedures.pas' {frmProcedures};
 
 {$R *.res}
 
@@ -33,5 +35,7 @@ begin
   Application.CreateForm(TFormRevenue2, FormRevenue2);
   Application.CreateForm(TSelectorMainForm, SelectorMainForm);
   Application.CreateForm(TMaxiSelectorForm, MaxiSelectorForm);
-  Application.Run;
+  Application.CreateForm(TfrmFunctions, frmFunctions);
+  Application.CreateForm(TfrmProcedures, frmProcedures);
+  Application.Run ;
 end.

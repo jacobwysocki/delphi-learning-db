@@ -1,64 +1,82 @@
 ﻿[Closed Files]
-File_0=TSourceModule,'C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmMain_u.pas',0,1,114,44,138,0,0,,
-File_1=TSourceModule,'C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmName_u.pas',0,1,1,77,16,0,0,,
-File_2=TSourceModule,'c:\program files (x86)\embarcadero\studio\21.0\SOURCE\VCL\Vcl.Controls.pas',0,1,10087,1,10116,0,0,,
-File_3=TSourceModule,'c:\program files (x86)\embarcadero\studio\21.0\SOURCE\VCL\Vcl.Forms.pas',0,1,4760,1,4788,0,0,{{1891,4}
-File_4=TSourceModule,'c:\program files (x86)\embarcadero\studio\21.0\SOURCE\VCL\Vcl.StdCtrls.pas',0,1,5412,1,5440,0,0,{{1715,4}
-File_5=TSourceModule,'c:\program files (x86)\embarcadero\studio\21.0\source\data\vclctrls\Vcl.DBCtrls.pas',0,1,1976,1,2007,0,0,,
-File_6=TSourceModule,'c:\program files (x86)\embarcadero\studio\21.0\source\data\firedac\FireDAC.Phys.pas',0,1,3983,1,4017,0,0,,
-File_7=TSourceModule,'c:\program files (x86)\embarcadero\studio\21.0\SOURCE\RTL\SYS\System.pas',0,1,21642,1,21668,0,0,,
-File_8=TSourceModule,'C:\TMS_Source\Manpack3\Model2\unitHA_AmazonFields.pas',0,1,1,17,22,0,0,,
-File_9=TSourceModule,'C:\TMS_Source\Manpack3\NewUI\unitBaseForm.pas',0,1,1,1,1,0,0,,
-File_10=TSourceModule,'C:\TMS_Source\Manpack3\Model2\UnitHA_InputJobsDSModel2.pas',0,1,2573,38,2638,0,0,,
-File_11=TSourceModule,'C:\TMS_Source\Manpack3\UNITBATCHFORM.pas',0,1,1,1,1,0,0,,
+File_0=TSourceModule,'c:\program files (x86)\embarcadero\studio\21.0\SOURCE\VCL\Vcl.Controls.pas',0,1,10087,1,10116,0,0,,
+File_1=TSourceModule,'c:\program files (x86)\embarcadero\studio\21.0\SOURCE\VCL\Vcl.Forms.pas',0,1,4760,1,4788,0,0,{{1891,4}
+File_2=TSourceModule,'c:\program files (x86)\embarcadero\studio\21.0\SOURCE\VCL\Vcl.StdCtrls.pas',0,1,5412,1,5440,0,0,{{1715,4}
+File_3=TSourceModule,'c:\program files (x86)\embarcadero\studio\21.0\source\data\vclctrls\Vcl.DBCtrls.pas',0,1,1976,1,2007,0,0,,
+File_4=TSourceModule,'c:\program files (x86)\embarcadero\studio\21.0\source\data\firedac\FireDAC.Phys.pas',0,1,3983,1,4017,0,0,,
+File_5=TSourceModule,'c:\program files (x86)\embarcadero\studio\21.0\SOURCE\RTL\SYS\System.pas',0,1,21642,1,21668,0,0,,
+File_6=TSourceModule,'C:\TMS_Source\Manpack3\Model2\unitHA_AmazonFields.pas',0,1,1,17,22,0,0,,
+File_7=TSourceModule,'C:\TMS_Source\Manpack3\NewUI\unitBaseForm.pas',0,1,1,1,1,0,0,,
+File_8=TSourceModule,'C:\TMS_Source\Manpack3\Model2\UnitHA_InputJobsDSModel2.pas',0,1,2573,38,2638,0,0,,
+File_9=TSourceModule,'C:\TMS_Source\Manpack3\UNITBATCHFORM.pas',0,1,1,1,1,0,0,,
 
 [Modules]
-Module0=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\RevenueExercise.pas
-Module1=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\NameProject_p.dproj
-Module2=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\unitfrmMaxiSelector.pas
+Module0=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\unitfrmMaxiSelector.pas
+Module1=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\SelectorMaxi.pas
+Module2=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\unitMain.pas
 Module3=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\SelectorMain.pas
-Module4=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\unitMain.pas
-Module5=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\dataView_u.pas
-Module6=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\dmCD_u.pas
-Module7=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\RevenueExercise2.pas
-Module8=c:\program files (x86)\embarcadero\studio\21.0\source\data\Data.DB.pas
-Module9=default.htm
-Count=10
+Module4=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\RevenueExercise2.pas
+Module5=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\RevenueExercise.pas
+Module6=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmUser_u.pas
+Module7=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmStringVariables_u.pas
+Module8=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmName_u.pas
+Module9=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmMain_u.pas
+Module10=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\dataView_u.pas
+Module11=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\NameProject_p.dproj
+Module12=default.htm
+Module13=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\dmCD_u.pas
+Module14=c:\program files (x86)\embarcadero\studio\21.0\source\data\Data.DB.pas
+Count=15
 EditWindowCount=1
-
-[C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\RevenueExercise.pas]
-ModuleType=TSourceModule
-
-[C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\NameProject_p.dproj]
-ModuleType=TBaseProject
 
 [C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\unitfrmMaxiSelector.pas]
 ModuleType=TSourceModule
 
-[C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\SelectorMain.pas]
+[C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\SelectorMaxi.pas]
 ModuleType=TSourceModule
 
 [C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\unitMain.pas]
 ModuleType=TSourceModule
 
-[C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\dataView_u.pas]
-ModuleType=TSourceModule
-
-[C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\dmCD_u.pas]
+[C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\SelectorMain.pas]
 ModuleType=TSourceModule
 
 [C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\RevenueExercise2.pas]
 ModuleType=TSourceModule
 
-[c:\program files (x86)\embarcadero\studio\21.0\source\data\Data.DB.pas]
+[C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\RevenueExercise.pas]
 ModuleType=TSourceModule
+
+[C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmUser_u.pas]
+ModuleType=TSourceModule
+
+[C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmStringVariables_u.pas]
+ModuleType=TSourceModule
+
+[C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmName_u.pas]
+ModuleType=TSourceModule
+
+[C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmMain_u.pas]
+ModuleType=TSourceModule
+
+[C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\dataView_u.pas]
+ModuleType=TSourceModule
+
+[C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\NameProject_p.dproj]
+ModuleType=TBaseProject
 
 [default.htm]
 ModuleType=TURLModule
 
+[C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\dmCD_u.pas]
+ModuleType=TSourceModule
+
+[c:\program files (x86)\embarcadero\studio\21.0\source\data\Data.DB.pas]
+ModuleType=TSourceModule
+
 [EditWindow0]
-ViewCount=10
-CurrentEditView=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\RevenueExercise.pas
+ViewCount=15
+CurrentEditView=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\unitfrmMaxiSelector.pas
 View0=0
 View1=1
 View2=2
@@ -69,6 +87,11 @@ View6=6
 View7=7
 View8=8
 View9=9
+View10=10
+View11=11
+View12=12
+View13=13
+View14=14
 PercentageSizes=1
 Create=1
 Visible=1
@@ -87,13 +110,13 @@ BorlandEditorCodeExplorer=BorlandEditorCodeExplorer@EditWindow0
 TopPanelSize=0
 LeftPanelSize=1895
 LeftPanelClients=PropertyInspector,DockSite3
-LeftPanelData=00000800010100000000A71300000000000001670700000000000001000000005A0E000009000000446F636B53697465330100000000F02200001100000050726F7065727479496E73706563746F72FFFFFFFF
+LeftPanelData=00000800010100000000291000000000000001670700000000000001000000005A0E000009000000446F636B53697465330100000000BA1C00001100000050726F7065727479496E73706563746F72FFFFFFFF
 RightPanelSize=1996
 RightPanelClients=DockSite2,DockSite4
-RightPanelData=00000800010100000000A71300000000000001CC0700000000000001000000004912000009000000446F636B53697465320100000000F022000009000000446F636B5369746534FFFFFFFF
-BottomPanelSize=0
-BottomPanelClients=DockSite1,MessageView
-BottomPanelData=0000080001020200000009000000446F636B53697465310F0000004D65737361676556696577466F726D1534000000000000022806000000000000FFFFFFFF
+RightPanelData=00000800010100000000291000000000000001CC0700000000000001000000004912000009000000446F636B53697465320100000000BA1C000009000000446F636B5369746534FFFFFFFF
+BottomPanelSize=1535
+BottomPanelClients=MessageView,DockSite1
+BottomPanelData=0000080001020100000009000000446F636B5369746531034500000000000002FF050000000000000100000000034500000F0000004D65737361676556696577466F726DFFFFFFFF
 BottomMiddlePanelSize=0
 BottomMiddlePanelClients=DockSite0,GraphDrawingModel
 BottomMiddelPanelData=0000080001020200000009000000446F636B536974653010000000477261706844726177696E67566965779F1D00000000000002F206000000000000FFFFFFFF
@@ -122,36 +145,36 @@ TopLine=111
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\dataView_u.pas
+EditViewName=Borland.FormDesignerView
 
 [View3]
 CustomEditViewType=TEditView
-Module=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\SelectorMain.pas
-CursorX=37
-CursorY=16
-TopLine=13
+Module=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmMain_u.pas
+CursorX=44
+CursorY=138
+TopLine=114
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\SelectorMain.pas
+EditViewName=Borland.FormDesignerView
 
 [View4]
 CustomEditViewType=TEditView
-Module=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\unitfrmMaxiSelector.pas
-CursorX=46
-CursorY=14
+Module=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmName_u.pas
+CursorX=77
+CursorY=16
 TopLine=1
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\unitfrmMaxiSelector.pas
+EditViewName=Borland.FormDesignerView
 
 [View5]
 CustomEditViewType=TEditView
-Module=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\unitMain.pas
-CursorX=6
-CursorY=84
-TopLine=30
+Module=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmStringVariables_u.pas
+CursorX=1
+CursorY=1
+TopLine=1
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -159,27 +182,82 @@ EditViewName=Borland.FormDesignerView
 
 [View6]
 CustomEditViewType=TEditView
+Module=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmUser_u.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=Borland.FormDesignerView
+
+[View7]
+CustomEditViewType=TEditView
+Module=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\SelectorMain.pas
+CursorX=21
+CursorY=71
+TopLine=43
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=Borland.FormDesignerView
+
+[View8]
+CustomEditViewType=TEditView
+Module=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\unitfrmMaxiSelector.pas
+CursorX=1
+CursorY=108
+TopLine=64
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=Borland.FormDesignerView
+
+[View9]
+CustomEditViewType=TEditView
+Module=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\SelectorMaxi.pas
+CursorX=18
+CursorY=1
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=Borland.FormDesignerView
+
+[View10]
+CustomEditViewType=TEditView
+Module=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\unitMain.pas
+CursorX=6
+CursorY=84
+TopLine=12
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=Borland.FormDesignerView
+
+[View11]
+CustomEditViewType=TEditView
 Module=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\NameProject_p.dpr
-CursorX=11
-CursorY=19
+CursorX=19
+CursorY=36
 TopLine=1
 LeftCol=1
 Elisions=
 Bookmarks=
 EditViewName=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\NameProject_p.dpr
 
-[View7]
+[View12]
 CustomEditViewType=TEditView
 Module=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\RevenueExercise.pas
-CursorX=18
-CursorY=65
+CursorX=59
+CursorY=25
 TopLine=1
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\RevenueExercise.pas
+EditViewName=Borland.FormDesignerView
 
-[View8]
+[View13]
 CustomEditViewType=TEditView
 Module=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\RevenueExercise2.pas
 CursorX=73
@@ -188,9 +266,9 @@ TopLine=79
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=Borland.FormDesignerView
+EditViewName=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\RevenueExercise2.pas
 
-[View9]
+[View14]
 CustomEditViewType=TEditView
 Module=c:\program files (x86)\embarcadero\studio\21.0\source\data\Data.DB.pas
 CursorX=1
@@ -215,11 +293,11 @@ State=0
 Left=0
 Top=0
 Width=3824
-Height=1221
+Height=1185
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3824
-ClientHeight=1221
+ClientHeight=1185
 TBDockHeight=216
 LRDockWidth=13602
 Dockable=1
@@ -276,18 +354,18 @@ StayOnTop=0
 [MessageView]
 PercentageSizes=1
 Create=1
-Visible=0
+Visible=1
 Docked=1
 State=0
 Left=0
-Top=0
-Width=2770
-Height=1422
+Top=28
+Width=9938
+Height=1386
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=2770
-ClientHeight=1422
-TBDockHeight=1422
+ClientWidth=9938
+ClientHeight=1386
+TBDockHeight=1386
 LRDockWidth=2770
 Dockable=1
 StayOnTop=0
@@ -301,11 +379,11 @@ State=0
 Left=0
 Top=0
 Width=1996
-Height=4210
+Height=2565
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1996
-ClientHeight=4210
+ClientHeight=2565
 TBDockHeight=7155
 LRDockWidth=1996
 Dockable=1
@@ -320,16 +398,21 @@ State=0
 Left=0
 Top=557
 Width=1895
-Height=5251
+Height=3606
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1895
-ClientHeight=5251
-TBDockHeight=5194
+ClientHeight=3606
+TBDockHeight=7004
 LRDockWidth=1895
 Dockable=1
 StayOnTop=0
 SplitPos=111
+
+[PropInspDesignerSelection]
+ArrangeBy=Name
+SelectedItem=Position,OnClick
+ExpandedItems=Anchors=0,BorderIcons=0,Constraints=0,Font=0,ImageMargins=0,LiveBindings=0,"LiveBindings Designer=0",Margins=0,StyleElements=0,BevelEdges=0,CalColors=0,CustomTitleBar=0,GlassFrame=0,HorzScrollBar=0,Padding=0,Touch=0,VertScrollBar=0
 
 [frmDesignPreview]
 PercentageSizes=1
@@ -340,11 +423,11 @@ State=0
 Left=0
 Top=0
 Width=1996
-Height=2155
+Height=6803
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1996
-ClientHeight=2155
+ClientHeight=6803
 TBDockHeight=5955
 LRDockWidth=2512
 Dockable=1
@@ -356,8 +439,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=0
-Top=0
+Left=-2296
+Top=370
 Width=273
 Height=359
 MaxLeft=-1
@@ -381,11 +464,11 @@ State=0
 Left=0
 Top=0
 Width=3824
-Height=1221
+Height=1185
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3824
-ClientHeight=1221
+ClientHeight=1185
 TBDockHeight=409
 LRDockWidth=4949
 Dockable=1
@@ -400,11 +483,11 @@ State=0
 Left=0
 Top=0
 Width=3824
-Height=1221
+Height=1185
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3824
-ClientHeight=1221
+ClientHeight=1185
 TBDockHeight=216
 LRDockWidth=7406
 Dockable=1
@@ -423,11 +506,11 @@ State=0
 Left=0
 Top=0
 Width=3824
-Height=1221
+Height=1185
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3824
-ClientHeight=1221
+ClientHeight=1185
 TBDockHeight=1537
 LRDockWidth=3484
 Dockable=1
@@ -442,11 +525,11 @@ State=0
 Left=0
 Top=0
 Width=3824
-Height=1221
+Height=1185
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3824
-ClientHeight=1221
+ClientHeight=1185
 TBDockHeight=2062
 LRDockWidth=3484
 Dockable=1
@@ -461,11 +544,11 @@ State=0
 Left=0
 Top=0
 Width=2340
-Height=1279
+Height=1042
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2340
-ClientHeight=1279
+ClientHeight=1042
 TBDockHeight=2320
 LRDockWidth=2824
 Dockable=1
@@ -480,11 +563,11 @@ State=0
 Left=0
 Top=0
 Width=2340
-Height=1279
+Height=1286
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2340
-ClientHeight=1279
+ClientHeight=1286
 TBDockHeight=3211
 LRDockWidth=2824
 Dockable=1
@@ -499,11 +582,11 @@ State=0
 Left=0
 Top=0
 Width=2340
-Height=1279
+Height=1286
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2340
-ClientHeight=1279
+ClientHeight=1286
 TBDockHeight=1157
 LRDockWidth=3676
 Dockable=1
@@ -526,11 +609,11 @@ State=0
 Left=0
 Top=0
 Width=1996
-Height=0
+Height=6803
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1996
-ClientHeight=0
+ClientHeight=6803
 TBDockHeight=4885
 LRDockWidth=7148
 Dockable=1
@@ -542,8 +625,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=0
-Top=0
+Left=501
+Top=1099
 Width=2855
 Height=3211
 MaxLeft=-1
@@ -561,8 +644,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=-414
-Top=-399
+Left=-250
+Top=-124
 Width=1848
 Height=3139
 MaxLeft=-1
@@ -583,11 +666,11 @@ State=0
 Left=0
 Top=0
 Width=2340
-Height=1279
+Height=1286
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2340
-ClientHeight=1279
+ClientHeight=1286
 TBDockHeight=4835
 LRDockWidth=3562
 Dockable=1
@@ -602,11 +685,11 @@ State=0
 Left=0
 Top=0
 Width=2340
-Height=1279
+Height=1286
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2340
-ClientHeight=1279
+ClientHeight=1286
 TBDockHeight=4835
 LRDockWidth=3562
 Dockable=1
@@ -621,11 +704,11 @@ State=0
 Left=0
 Top=0
 Width=3824
-Height=1221
+Height=1185
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3824
-ClientHeight=1221
+ClientHeight=1185
 TBDockHeight=1545
 LRDockWidth=8742
 Dockable=1
@@ -665,14 +748,14 @@ Docked=0
 State=0
 Left=0
 Top=0
-Width=1609
-Height=2701
+Width=2434
+Height=4246
 MaxLeft=-4
 MaxTop=-7
-ClientWidth=1547
-ClientHeight=2421
-TBDockHeight=2701
-LRDockWidth=1609
+ClientWidth=2371
+ClientHeight=3966
+TBDockHeight=4246
+LRDockWidth=2434
 Dockable=1
 StayOnTop=0
 
@@ -704,11 +787,11 @@ State=0
 Left=0
 Top=0
 Width=1996
-Height=0
+Height=6803
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1996
-ClientHeight=0
+ClientHeight=6803
 TBDockHeight=4885
 LRDockWidth=5309
 Dockable=1
@@ -747,12 +830,12 @@ State=0
 Left=8
 Top=8
 Width=2340
-Height=1480
+Height=1487
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2340
-ClientHeight=1480
-TBDockHeight=1480
+ClientHeight=1487
+TBDockHeight=1487
 LRDockWidth=2340
 Dockable=1
 StayOnTop=0
@@ -768,15 +851,15 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=8
-Top=8
+Left=1272
+Top=28
 Width=3824
-Height=1422
+Height=1386
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3824
-ClientHeight=1422
-TBDockHeight=1422
+ClientHeight=1386
+TBDockHeight=1386
 LRDockWidth=3824
 Dockable=1
 StayOnTop=0
@@ -800,7 +883,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=1996
 ClientHeight=4583
-TBDockHeight=4598
+TBDockHeight=7004
 LRDockWidth=1996
 Dockable=1
 StayOnTop=0
@@ -824,7 +907,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=1895
 ClientHeight=3542
-TBDockHeight=3549
+TBDockHeight=7004
 LRDockWidth=1895
 Dockable=1
 StayOnTop=0
@@ -843,12 +926,12 @@ State=0
 Left=0
 Top=702
 Width=1996
-Height=4210
+Height=2565
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1996
-ClientHeight=4210
-TBDockHeight=4152
+ClientHeight=2565
+TBDockHeight=7004
 LRDockWidth=1996
 Dockable=1
 StayOnTop=0
