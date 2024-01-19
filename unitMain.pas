@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, RevenueExercise, RevenueExercise2,
-  dataView_u, frmMain_u, SelectorMain, MathFunctions, Procedures;
+  dataView_u, frmMain_u, SelectorMain, MathFunctions, Procedures, Game;
 
 type
   TMainForm = class(TForm)
@@ -17,6 +17,7 @@ type
     btnClose: TButton;
     btnFunctions: TButton;
     btnProcedures: TButton;
+    btnGame: TButton;
     procedure btnRevenueTypesClick(Sender: TObject);
     procedure btnMusicClick(Sender: TObject);
     procedure btnPersonalDetailsClick(Sender: TObject);
@@ -25,6 +26,7 @@ type
     procedure btnCloseClick(Sender: TObject);
     procedure btnFunctionsClick(Sender: TObject);
     procedure btnProceduresClick(Sender: TObject);
+    procedure btnGameClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -64,6 +66,14 @@ begin
   frmFunctions := TfrmFunctions.Create(Self) ;
   frmFunctions.ShowModal ;
 end;
+
+procedure TMainForm.btnGameClick(Sender: TObject) ;
+var
+  frmGame: TfrmGame ;
+begin
+  frmGame := TfrmGame.Create(Self) ;
+  frmGame.ShowModal ;
+end ;
 
 procedure TMainForm.btnMusicClick(Sender: TObject);
 var

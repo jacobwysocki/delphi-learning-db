@@ -17,7 +17,8 @@ uses
   unitfrmMaxiSelector in 'unitfrmMaxiSelector.pas' {formMaxiSelector},
   SelectorMaxi in 'SelectorMaxi.pas' {MaxiSelectorForm},
   MathFunctions in 'MathFunctions.pas' {frmFunctions},
-  Procedures in 'Procedures.pas' {frmProcedures};
+  Procedures in 'Procedures.pas' {frmProcedures},
+  Game in 'Game.pas' {frmGame};
 
 {$R *.res}
 
@@ -37,5 +38,6 @@ begin
   Application.CreateForm(TMaxiSelectorForm, MaxiSelectorForm);
   Application.CreateForm(TfrmFunctions, frmFunctions);
   Application.CreateForm(TfrmProcedures, frmProcedures);
+  Application.CreateForm(TfrmGame, frmGame);
   Application.Run ;
 end.

@@ -86,4 +86,13 @@ object MainForm: TMainForm
     TabOrder = 7
     OnClick = btnProceduresClick
   end
+  object btnGame: TButton
+    Left = 168
+    Top = 124
+    Width = 237
+    Height = 25
+    Caption = 'Rock, Paper, Scissors Game'
+    TabOrder = 8
+    OnClick = btnGameClick
+  end
 end
