@@ -18,7 +18,8 @@ uses
   SelectorMaxi in 'SelectorMaxi.pas' {MaxiSelectorForm},
   MathFunctions in 'MathFunctions.pas' {frmFunctions},
   Procedures in 'Procedures.pas' {frmProcedures},
-  Game in 'Game.pas' {frmGame};
+  Game in 'Game.pas' {frmGame},
+  RoundedPanelUnit in 'RoundedPanelUnit.pas';
 
 {$R *.res}
 
