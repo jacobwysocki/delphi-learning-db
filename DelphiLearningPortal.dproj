@@ -101,19 +101,19 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="unitPersonalInformation.pas">
+        <DCCReference Include="PersonalInformationForm.pas">
             <Form>frmPersonalDetails</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="frmUser_u.pas">
+        <DCCReference Include="GreetingUserNoName.pas">
             <Form>Form2</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="frmName_u.pas">
+        <DCCReference Include="GreetingUserName.pas">
             <Form>Form3</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="frmStringVariables_u.pas">
+        <DCCReference Include="StringVariablesExercise.pas">
             <Form>frmStringVariables</Form>
             <FormType>dfm</FormType>
         </DCCReference>
@@ -122,11 +122,11 @@
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
-        <DCCReference Include="dataView_u.pas">
+        <DCCReference Include="MusicDBForm.pas">
             <Form>dataView</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="RevenueExercise.pas">
+        <DCCReference Include="RevenueExerciseDBForm.pas">
             <Form>FormRevenue</Form>
             <FormType>dfm</FormType>
         </DCCReference>
@@ -134,7 +134,7 @@
             <Form>MainForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="RevenueExercise2.pas">
+        <DCCReference Include="RevenueExerciseDBInteractiveForm.pas">
             <Form>FormRevenue2</Form>
             <FormType>dfm</FormType>
         </DCCReference>

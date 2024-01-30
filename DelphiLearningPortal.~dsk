@@ -12,12 +12,12 @@ File_9=TSourceModule,'c:\program files (x86)\embarcadero\studio\21.0\source\data
 File_10=TSourceModule,'c:\program files (x86)\embarcadero\studio\21.0\SOURCE\RTL\SYS\System.pas',0,1,21642,1,21668,0,0,,
 
 [Modules]
-Module0=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\MainPage.pas
-Module1=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\DelphiLearningPortal.dproj
-Module2=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\PersonalInfo.pas
-Module3=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmStringVariables_u.pas
-Module4=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmUser_u.pas
-Module5=default.htm
+Module0=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmUser_u.pas
+Module1=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\MainPage.pas
+Module2=default.htm
+Module3=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\DelphiLearningPortal.dproj
+Module4=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\unitPersonalInformation.pas
+Module5=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmStringVariables_u.pas
 Module6=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\RoundedPanelUnit.pas
 Module7=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Game.pas
 Module8=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\Procedures.pas
@@ -30,23 +30,23 @@ Module14=c:\program files (x86)\embarcadero\studio\21.0\source\data\Data.DB.pas
 Count=15
 EditWindowCount=1
 
-[C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\MainPage.pas]
-ModuleType=TSourceModule
-
-[C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\DelphiLearningPortal.dproj]
-ModuleType=TBaseProject
-
-[C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\PersonalInfo.pas]
-ModuleType=TSourceModule
-
-[C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmStringVariables_u.pas]
-ModuleType=TSourceModule
-
 [C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmUser_u.pas]
+ModuleType=TSourceModule
+
+[C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\MainPage.pas]
 ModuleType=TSourceModule
 
 [default.htm]
 ModuleType=TURLModule
+
+[C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\DelphiLearningPortal.dproj]
+ModuleType=TBaseProject
+
+[C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\unitPersonalInformation.pas]
+ModuleType=TSourceModule
+
+[C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmStringVariables_u.pas]
+ModuleType=TSourceModule
 
 [C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\RoundedPanelUnit.pas]
 ModuleType=TSourceModule
@@ -77,7 +77,7 @@ ModuleType=TSourceModule
 
 [EditWindow0]
 ViewCount=15
-CurrentEditView=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\MainPage.pas
+CurrentEditView=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\frmUser_u.pas
 View0=0
 View1=1
 View2=2
@@ -111,13 +111,13 @@ BorlandEditorCodeExplorer=BorlandEditorCodeExplorer@EditWindow0
 TopPanelSize=0
 LeftPanelSize=1895
 LeftPanelClients=PropertyInspector,DockSite3
-LeftPanelData=00000800010100000000291000000000000001670700000000000001000000005A0E000009000000446F636B53697465330100000000BA1C00001100000050726F7065727479496E73706563746F72FFFFFFFF
+LeftPanelData=00000800010100000000A71300000000000001670700000000000001000000005A0E000009000000446F636B53697465330100000000F02200001100000050726F7065727479496E73706563746F72FFFFFFFF
 RightPanelSize=1996
 RightPanelClients=DockSite2,DockSite4
-RightPanelData=00000800010100000000291000000000000001CC0700000000000001000000004912000009000000446F636B53697465320100000000BA1C000009000000446F636B5369746534FFFFFFFF
-BottomPanelSize=1535
+RightPanelData=00000800010100000000A71300000000000001CC0700000000000001000000004912000009000000446F636B53697465320100000000F022000009000000446F636B5369746534FFFFFFFF
+BottomPanelSize=0
 BottomPanelClients=DockSite1,MessageView
-BottomPanelData=0000080001020100000009000000446F636B5369746531034500000000000002FF050000000000000100000000034500000F0000004D65737361676556696577466F726DFFFFFFFF
+BottomPanelData=0000080001020200000009000000446F636B53697465310F0000004D65737361676556696577466F726D1534000000000000022806000000000000FFFFFFFF
 BottomMiddlePanelSize=0
 BottomMiddlePanelClients=DockSite0,GraphDrawingModel
 BottomMiddelPanelData=0000080001020200000009000000446F636B536974653010000000477261706844726177696E67566965779F1D00000000000002F206000000000000FFFFFFFF
@@ -183,7 +183,7 @@ EditViewName=Borland.FormDesignerView
 
 [View6]
 CustomEditViewType=TEditView
-Module=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\PersonalInfo.pas
+Module=C:\Users\JWysocki\OneDrive - Mandata Ltd\Documents\Delphi Learning\First Program\unitPersonalInformation.pas
 CursorX=10
 CursorY=3
 TopLine=1
@@ -355,18 +355,18 @@ StayOnTop=0
 [MessageView]
 PercentageSizes=1
 Create=1
-Visible=1
+Visible=0
 Docked=1
 State=0
 Left=0
 Top=28
-Width=9938
-Height=1386
+Width=2770
+Height=1415
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=9938
-ClientHeight=1386
-TBDockHeight=1386
+ClientWidth=2770
+ClientHeight=1415
+TBDockHeight=1415
 LRDockWidth=2770
 Dockable=1
 StayOnTop=0
@@ -380,11 +380,11 @@ State=0
 Left=0
 Top=0
 Width=1996
-Height=2565
+Height=4210
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1996
-ClientHeight=2565
+ClientHeight=4210
 TBDockHeight=7155
 LRDockWidth=1996
 Dockable=1
@@ -399,16 +399,16 @@ State=0
 Left=0
 Top=557
 Width=1895
-Height=3606
+Height=5251
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1895
-ClientHeight=3606
+ClientHeight=5251
 TBDockHeight=9052
 LRDockWidth=1895
 Dockable=1
 StayOnTop=0
-SplitPos=182
+SplitPos=111
 
 [frmDesignPreview]
 PercentageSizes=1
@@ -799,14 +799,14 @@ Create=1
 Visible=0
 Docked=0
 State=0
-Left=-8
-Top=10345
+Left=0
+Top=0
 Width=1824
-Height=5912
+Height=6171
 MaxLeft=-4
 MaxTop=-7
 ClientWidth=1762
-ClientHeight=5632
+ClientHeight=5891
 TBDockHeight=6171
 LRDockWidth=1824
 Dockable=1
@@ -922,11 +922,11 @@ State=0
 Left=0
 Top=702
 Width=1996
-Height=2565
+Height=4210
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1996
-ClientHeight=2565
+ClientHeight=4210
 TBDockHeight=9052
 LRDockWidth=1996
 Dockable=1
