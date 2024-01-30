@@ -1,4 +1,4 @@
-unit frmName_u;
+unit GreetingUserName;
 
 interface
 

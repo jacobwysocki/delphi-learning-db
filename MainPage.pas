@@ -1,11 +1,11 @@
-unit unitMain;
+unit MainPage;
 
 interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, RevenueExercise, RevenueExercise2, frmStringVariables_u,
-  dataView_u, frmMain_u, SelectorMain, MathFunctions, Procedures, Game, Vcl.ExtCtrls, EnPngGr, ShellAPI, Vcl.ComCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, RevenueExerciseDBInteractiveForm, RevenueExerciseDBForm, StringVariablesExercise,
+  dataView_u, PersonalInformationForm, SelectorMain, MathFunctions, Procedures, Game, Vcl.ExtCtrls, EnPngGr, ShellAPI, Vcl.ComCtrls;
 
 type
   TMainForm = class(TForm)

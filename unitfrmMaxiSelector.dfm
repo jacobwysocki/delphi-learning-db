@@ -57,6 +57,7 @@ object formMaxiSelector: TformMaxiSelector
       Top = 23
       Width = 93
       Height = 21
+      Date = 45321.000000000000000000
       Time = 0.957986111112404600
       TabOrder = 0
     end

@@ -10624,8 +10624,6 @@ object MainForm: TMainForm
     Color = clCream
     ParentBackground = False
     TabOrder = 2
-    ExplicitLeft = 217
-    ExplicitHeight = 919
     object pnlUIExercises: TPanel
       Left = 559
       Top = 46

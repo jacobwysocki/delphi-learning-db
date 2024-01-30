@@ -1,11 +1,11 @@
-unit frmMain_u;
+unit PersonalInformationForm;
 
 interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, frmUser_u, frmName_u, frmStringVariables_u
-  ,Vcl.ExtCtrls, Vcl.Buttons, EnPngGr, Vcl.ComCtrls, dataView_u;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, GreetingUserName, GreetingUserNoName, StringVariablesExercise
+  ,Vcl.ExtCtrls, Vcl.Buttons, EnPngGr, Vcl.ComCtrls, MusicDBForm;
 
 type
   TfrmPersonalDetails = class(TForm)

@@ -1,4 +1,4 @@
-unit frmStringVariables_u;
+unit StringVariablesExercise;
 
 interface
 

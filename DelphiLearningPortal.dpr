@@ -1,8 +1,8 @@
-program NameProject_p;
+program DelphiLearningPortal;
 
 uses
   Vcl.Forms,
-  frmMain_u in 'frmMain_u.pas' {frmPersonalDetails},
+  unitPersonalInformation in 'unitPersonalInformation.pas' {frmPersonalDetails},
   frmUser_u in 'frmUser_u.pas' {Form2},
   frmName_u in 'frmName_u.pas' {Form3},
   Vcl.Themes,
@@ -11,15 +11,14 @@ uses
   dmCD_u in 'dmCD_u.pas' {dmCD: TDataModule},
   dataView_u in 'dataView_u.pas' {dataView},
   RevenueExercise in 'RevenueExercise.pas' {FormRevenue},
-  unitMain in 'unitMain.pas' {MainForm},
+  MainPage in 'MainPage.pas' {MainForm},
   RevenueExercise2 in 'RevenueExercise2.pas' {FormRevenue2},
   SelectorMain in 'SelectorMain.pas' {SelectorMainForm},
   unitfrmMaxiSelector in 'unitfrmMaxiSelector.pas' {formMaxiSelector},
   SelectorMaxi in 'SelectorMaxi.pas' {MaxiSelectorForm},
   MathFunctions in 'MathFunctions.pas' {frmFunctions},
   Procedures in 'Procedures.pas' {frmProcedures},
-  Game in 'Game.pas' {frmGame},
-  RoundedPanelUnit in 'RoundedPanelUnit.pas';
+  Game in 'Game.pas' {frmGame};
 
 {$R *.res}
 
